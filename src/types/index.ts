@@ -1,9 +1,8 @@
 /**
- * Core TypeScript interfaces for Frame Portfolio
- * Based on SPECIFICATION.md data model requirements
+ * Core TypeScript interfaces for BarnNorth Studios Portfolio
  */
 
-export type ProjectCategory = 'portraits' | 'landscapes' | 'editorial' | 'architecture' | 'documentary';
+export type ProjectCategory = 'ai-art' | 'web-apps' | 'experiments' | 'open-source' | 'creative-tech';
 
 export type AspectRatio = 'portrait' | 'landscape' | 'square';
 
@@ -24,9 +23,11 @@ export interface Project {
   images: ProjectImage[];
   description: string;
   client?: string;
-  camera?: string;
+  tools?: string;
   location?: string;
   slug: string;
+  liveUrl?: string;
+  repoUrl?: string;
 }
 
 export interface PhotographerInfo {
@@ -53,7 +54,7 @@ export interface PhotographerInfo {
 export interface ContactSubmission {
   name: string;
   email: string;
-  projectType: 'editorial' | 'commercial' | 'personal';
+  projectType: 'collaboration' | 'commission' | 'inquiry';
   message: string;
   timestamp: Date;
 }

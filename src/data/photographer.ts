@@ -1,41 +1,35 @@
 import type { PhotographerInfo } from '@/types';
 
 export const photographerInfo: PhotographerInfo = {
-  name: 'Sarah Mitchell',
-  tagline: 'Editorial & Commercial Photographer',
-  heroIntroduction: 'Creating visual narratives that capture authentic moments and timeless stories.',
-  biography: `Sarah Mitchell is an award-winning photographer specializing in editorial and commercial work, with recognition including the International Photography Awards Editorial Photographer of the Year 2023 and PDN Photo Annual Winner 2022. With over a decade of experience, her work has been featured in numerous international publications and exhibitions, collaborating with clients such as Vogue, The New York Times, National Geographic, Adobe, Apple, Nike, and Architectural Digest.
+  name: 'BarnNorth Studios',
+  tagline: 'AI Creator & Vibe Coder',
+  heroIntroduction: 'Building beautiful digital experiences with AI-powered creativity and modern web technologies.',
+  biography: `BarnNorth Studios is a personal creative studio focused on the intersection of artificial intelligence and software development. I specialize in creating AI-generated art, building web applications through vibe coding, and exploring the frontier of human-AI collaboration.
 
-Based in New York with an MFA in Photography from the School of Visual Arts, Sarah brings a unique perspective to every project, combining technical excellence with artistic vision. Her approach to photography is deeply rooted in storytelling, believing that every image should convey emotion and meaning beyond its visual appeal.`,
-  approach: `My photography is guided by three principles: authenticity, composition, and light. I believe the best images emerge when subjects feel comfortable and genuine, when composition guides the viewer's eye naturally, and when light reveals the essence of the moment.
+With a background spanning software engineering, design, and emerging technologies, I bring a unique perspective to every project. My work showcases what's possible when you combine creative vision with the latest AI tools and a passion for elegant code.`,
+  approach: `My creative process is guided by curiosity, iteration, and a belief that the best results come from the collaboration between human intuition and AI capabilities.
 
-Whether working on editorial assignments or commercial projects, I strive to create images that transcend their immediate purpose and become lasting visual statements.`,
+Whether I'm prompting AI models to generate stunning visuals, building web applications with modern frameworks, or experimenting with new technologies, I strive to push boundaries and create work that inspires others to explore what's possible.`,
   awards: [
-    'International Photography Awards - Editorial Photographer of the Year 2023',
-    'PDN Photo Annual - Winner 2022',
-    'Hasselblad Masters Finalist 2021',
-    'Communication Arts Photography Annual 2020'
+    'AI Art Showcase Feature - 2024',
+    'Open Source Contributor - Various Projects',
+    'Community Builder - AI & Creative Tech'
   ],
   clients: [
-    'Vogue',
-    'The New York Times',
-    'National Geographic',
-    'Adobe',
-    'Apple',
-    'Nike',
-    'Patagonia',
-    'Architectural Digest'
+    'Personal Projects',
+    'Open Source Community',
+    'Creative Collaborations'
   ],
-  education: 'MFA Photography, School of Visual Arts, New York',
-  location: 'New York, NY',
-  email: 'hello@sarahmitchell.com',
-  phone: '+1 (555) 123-4567',
-  availability: 'Currently booking for Q2 2025',
+  education: 'Self-taught developer & AI enthusiast',
+  location: 'Remote / Worldwide',
+  email: 'hello@barnnorth.studio',
+  phone: '',
+  availability: 'Open to collaborations and new projects',
   socialLinks: {
-    instagram: 'https://instagram.com/sarahmitchellphoto',
-    linkedin: 'https://linkedin.com/in/sarahmitchell',
-    behance: 'https://behance.net/sarahmitchell'
+    instagram: 'https://instagram.com/barnnorthstudios',
+    linkedin: 'https://linkedin.com/in/barnnorth',
+    behance: 'https://github.com/barnnorth'
   },
-  // Photo by Joshua Sun on Unsplash
-  portraitImage: 'https://images.unsplash.com/photo-1585279968680-6606ee6ed134?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjB8&ixlib=rb-4.1.0&q=80&w=1080'
+  // Placeholder - replace with your own portrait image
+  portraitImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjB8&ixlib=rb-4.1.0&q=80&w=1080'
 };

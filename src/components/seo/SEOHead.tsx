@@ -69,7 +69,7 @@ export function SEOHead({
 
     // Additional SEO tags
     updateMetaTag('author', photographerInfo.name);
-    updateMetaTag('keywords', `photography, ${photographerInfo.name}, professional photographer, ${photographerInfo.tagline}`);
+    updateMetaTag('keywords', `AI art, vibe coding, ${photographerInfo.name}, web development, creative technology, ${photographerInfo.tagline}`);
   }, [fullTitle, fullDescription, fullUrl, image, type]);
 
   return null;
