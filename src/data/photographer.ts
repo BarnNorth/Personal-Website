@@ -1,4 +1,5 @@
 import type { PhotographerInfo } from '@/types';
+import portraitImage from '@/assets/tommy-portrait.jpg';
 
 export const photographerInfo: PhotographerInfo = {
   name: 'Tommy Mulder',
@@ -34,5 +35,5 @@ Whether I'm prompting AI models to generate stunning visuals, building web appli
     twitter: 'https://twitter.com/barn_north',
     github: 'https://github.com/BarnNorth'
   },
-  portraitImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjB8&ixlib=rb-4.1.0&q=80&w=1080'
+  portraitImage: portraitImage
 };
