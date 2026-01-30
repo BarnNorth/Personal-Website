@@ -46,7 +46,7 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.2 }}
               >
-                {photographerInfo.tagline}
+                {photographerInfo.name}
               </motion.h1>
               
               <motion.p
