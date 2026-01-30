@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <SEOHead />
       
-      <div className="min-h-screen">
+      <div>
         {/* Hero Section */}
         <section className="relative h-[calc(100vh-100px)] w-full overflow-hidden">
           {/* Background Image */}
