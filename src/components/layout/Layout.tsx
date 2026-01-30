@@ -16,6 +16,7 @@ interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
   const location = useLocation();
   const isHomepage = location.pathname === '/';
+  const isHomeV2 = location.pathname === '/home-v2';
 
   return (
     <div className="min-h-screen flex flex-col relative">
@@ -25,10 +26,10 @@ export function Layout({ children }: LayoutProps) {
           <img
             src={heroBackground}
             alt=""
-            className="w-full h-full object-cover blur-sm scale-105"
+            className={`w-full h-full object-cover ${isHomeV2 ? '' : 'blur-sm scale-105'}`}
             aria-hidden="true"
           />
-          <div className="absolute inset-0 bg-background/85 backdrop-blur-sm" />
+          <div className={`absolute inset-0 ${isHomeV2 ? 'bg-background/50' : 'bg-background/85 backdrop-blur-sm'}`} />
         </div>
       )}
       
