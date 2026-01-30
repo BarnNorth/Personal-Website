@@ -7,6 +7,7 @@ import { SEOHead } from '@/components/seo/SEOHead';
 import { ArrowRight, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import heroBackground from '@/assets/hero-background.jpg';
 
 /**
  * Homepage with hero section, about, and projects
@@ -23,8 +24,8 @@ export default function Home() {
           {/* Background Image */}
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjB8&ixlib=rb-4.1.0&q=80&w=1920"
-              alt="Digital technology background"
+              src={heroBackground}
+              alt="Forest and mountains landscape"
               className="w-full h-full object-cover"
             />
             {/* Gradient Overlay for text readability */}
