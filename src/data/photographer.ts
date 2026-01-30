@@ -2,7 +2,7 @@ import type { PhotographerInfo } from '@/types';
 import portraitImage from '@/assets/tommy-portrait.jpg';
 
 export const photographerInfo: PhotographerInfo = {
-  name: 'Tommy Mulder',
+  name: 'BarnNorth Studios',
   tagline: 'Builder. Tinkerer. Problem Solver.',
   heroIntroduction: "I'm Tommy Mulder, an IT professional turned vibecoder. I spent 8 years building AI systems and automation tools at Pinterest and Snap. Now I build things for myself.",
   biography: `I spent 8 years in tech operations at Pinterest and Snap Inc., where I led AI implementations and automation projects. At Pinterest, I built Beacon—an AI-powered Slack support bot that achieved a 68% inquiry deflection rate. At Snap, I scaled Troopr (a Slack-Jira automation tool) to 1,500+ users in 30 days and owned the Voice of Tech survey that translated employee feedback into product roadmaps.
