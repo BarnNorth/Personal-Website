@@ -17,7 +17,7 @@ export default function Home() {
       
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative h-screen w-full overflow-hidden">
+        <section className="relative h-[calc(100vh-100px)] w-full overflow-hidden">
           {/* Background Image */}
           <div className="absolute inset-0">
             <img
