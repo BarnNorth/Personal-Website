@@ -26,7 +26,7 @@ export function Layout({ children }: LayoutProps) {
           <img
             src={heroBackground}
             alt=""
-            className={`w-full h-full object-cover ${isHomeV2 ? '' : 'blur-sm scale-105'}`}
+            className={`w-full h-full object-cover scale-105 ${isHomeV2 ? '' : 'blur-sm'}`}
             aria-hidden="true"
           />
           <div className={`absolute inset-0 ${isHomeV2 ? 'bg-background/70' : 'bg-background/85 backdrop-blur-sm'}`} />
