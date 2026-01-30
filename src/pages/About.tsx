@@ -12,7 +12,7 @@ export default function About() {
   return <>
       <SEOHead title="About" description={`Learn about ${photographerInfo.name}, ${photographerInfo.tagline}. ${photographerInfo.biography.split('\n\n')[0]}`} image={photographerInfo.portraitImage} />
       
-      <div className="min-h-screen">
+      <div>
         {/* Portrait and Biography - Split Layout */}
         <section className="py-16 md:py-24 px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">

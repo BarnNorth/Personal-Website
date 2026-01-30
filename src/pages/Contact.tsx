@@ -17,7 +17,7 @@ export default function Contact() {
         description={`Get in touch with ${photographerInfo.name} for collaborations, projects, and inquiries. ${photographerInfo.availability}`}
       />
       
-      <div className="min-h-screen">
+      <div>
         {/* Main Content */}
         <section className="py-16 md:py-24 px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
@@ -149,8 +149,6 @@ export default function Contact() {
           </div>
         </section>
 
-        {/* Bottom spacing */}
-        <div className="h-16" />
       </div>
     </>
   );

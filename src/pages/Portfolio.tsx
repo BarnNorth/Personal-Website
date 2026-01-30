@@ -17,7 +17,7 @@ export default function Portfolio() {
         description="Browse my projects built with AI and vibecoding - web apps, mobile apps, and creative experiments."
       />
       
-      <div className="min-h-screen">
+      <div>
         {/* Projects Grid */}
         <section className="py-16 md:py-24">
           <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -89,8 +89,6 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Bottom spacing */}
-        <div className="h-24" />
       </div>
     </>
   );
