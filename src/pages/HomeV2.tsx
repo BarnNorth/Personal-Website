@@ -16,7 +16,7 @@ export default function HomeV2() {
         description="Browse my projects built with AI and vibecoding - web apps, mobile apps, and creative experiments."
       />
       
-      <div className="h-[calc(100vh-100px)] flex items-center justify-center">
+      <div className="h-[calc(100vh-180px)] flex items-center justify-center">
         {/* Hero Content */}
         <div className="relative flex flex-col items-center justify-center px-6">
           <motion.div
