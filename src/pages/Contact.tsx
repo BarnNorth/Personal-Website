@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Github } from 'lucide-react';
 import { photographerInfo } from '@/data/photographer';
 import { ContactForm } from '@/components/forms/ContactForm';
 import { Separator } from '@/components/ui/separator';
@@ -14,126 +14,158 @@ export default function Contact() {
     <>
       <SEOHead
         title="Contact"
-        description={`Get in touch with ${photographerInfo.name} for photography inquiries, collaborations, and project bookings. ${photographerInfo.availability}`}
+        description={`Get in touch with ${photographerInfo.name} for collaborations, projects, and inquiries. ${photographerInfo.availability}`}
       />
       
       <div className="min-h-screen">
         {/* Hero Section */}
-      <section className="py-24 md:py-32 px-6 lg:px-8 border-b border-border">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
-          <motion.div
-            initial={{ opacity: 0.8, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-          >
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-wide mb-4">
-              Get in Touch
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground font-light tracking-wide">
-              Let's discuss your next project
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Main Content */}
-      <section className="py-16 md:py-24 px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
-            {/* Contact Form */}
+        <section className="py-24 md:py-32 px-6 lg:px-8 border-b border-border">
+          <div className="max-w-4xl mx-auto text-center space-y-6">
             <motion.div
-              className="space-y-6"
-              initial={{ opacity: 0.8, x: -10 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0.8, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <div className="space-y-3">
-                <h2 className="text-3xl md:text-4xl font-light tracking-wide">
-                  Send a Message
-                </h2>
-                <p className="text-muted-foreground font-light">
-                  Fill out the form below and I'll get back to you within 24-48 hours. {photographerInfo.availability}
-                </p>
-              </div>
-
-              <ContactForm />
-            </motion.div>
-
-            {/* Contact Information */}
-            <motion.div
-              className="space-y-8"
-              initial={{ opacity: 0.8, x: 10 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.4, delay: 0.1 }}
-            >
-              <div className="space-y-3">
-                <h2 className="text-3xl md:text-4xl font-light tracking-wide">
-                  Contact Information
-                </h2>
-                <p className="text-muted-foreground font-light">
-                  Prefer to reach out directly? Here's how you can contact me.
-                </p>
-              </div>
-
-              <Separator />
-
-              {/* Contact Details */}
-              <div className="space-y-6">
-                {/* Email */}
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-sm bg-accent">
-                    <Mail className="size-5 text-muted-foreground" />
-                  </div>
-                  <div className="space-y-1">
-                    <p className="text-sm font-light tracking-wide text-muted-foreground">
-                      Email
-                    </p>
-                    <a
-                      href={`mailto:${photographerInfo.email}`}
-                      className="text-base md:text-lg font-light hover:text-muted-foreground transition-colors"
-                    >
-                      {photographerInfo.email}
-                    </a>
-                  </div>
-                </div>
-
-                {/* Phone */}
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-sm bg-accent">
-                    <Phone className="size-5 text-muted-foreground" />
-                  </div>
-                  <div className="space-y-1">
-                    <p className="text-sm font-light tracking-wide text-muted-foreground">
-                      Phone
-                    </p>
-                    <a
-                      href={`tel:${photographerInfo.phone}`}
-                      className="text-base md:text-lg font-light hover:text-muted-foreground transition-colors"
-                    >
-                      {photographerInfo.phone}
-                    </a>
-                  </div>
-                </div>
-
-                {/* Location */}
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-sm bg-accent">
-                    <MapPin className="size-5 text-muted-foreground" />
-                  </div>
-                  <div className="space-y-1">
-                    <p className="text-sm font-light tracking-wide text-muted-foreground">
-                      Location
-                    </p>
-                    <p className="text-base md:text-lg font-light">
-                      {photographerInfo.location}
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-wide mb-4">
+                Get In Touch
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground font-light tracking-wide max-w-2xl mx-auto">
+                Interested in working together or want to chat about AI, vibecoding, or building products? Reach out.
+              </p>
             </motion.div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        {/* Main Content */}
+        <section className="py-16 md:py-24 px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
+              {/* Contact Form */}
+              <motion.div
+                className="space-y-6"
+                initial={{ opacity: 0.8, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.4 }}
+              >
+                <div className="space-y-3">
+                  <h2 className="text-3xl md:text-4xl font-light tracking-wide">
+                    Send a Message
+                  </h2>
+                  <p className="text-muted-foreground font-light">
+                    Fill out the form below and I'll get back to you as soon as possible.
+                  </p>
+                </div>
+
+                <ContactForm />
+              </motion.div>
+
+              {/* Contact Information */}
+              <motion.div
+                className="space-y-8"
+                initial={{ opacity: 0.8, x: 10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.4, delay: 0.1 }}
+              >
+                <div className="space-y-3">
+                  <h2 className="text-3xl md:text-4xl font-light tracking-wide">
+                    Contact Information
+                  </h2>
+                  <p className="text-muted-foreground font-light">
+                    Prefer to reach out directly? Here's how you can contact me.
+                  </p>
+                </div>
+
+                <Separator />
+
+                {/* Contact Details */}
+                <div className="space-y-6">
+                  {/* Email */}
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 rounded-sm bg-accent">
+                      <Mail className="size-5 text-muted-foreground" />
+                    </div>
+                    <div className="space-y-1">
+                      <p className="text-sm font-light tracking-wide text-muted-foreground">
+                        Email
+                      </p>
+                      <a
+                        href={`mailto:${photographerInfo.email}`}
+                        className="text-base md:text-lg font-light hover:text-muted-foreground transition-colors"
+                      >
+                        {photographerInfo.email}
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Location */}
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 rounded-sm bg-accent">
+                      <MapPin className="size-5 text-muted-foreground" />
+                    </div>
+                    <div className="space-y-1">
+                      <p className="text-sm font-light tracking-wide text-muted-foreground">
+                        Location
+                      </p>
+                      <p className="text-base md:text-lg font-light">
+                        {photographerInfo.location}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <Separator />
+
+                {/* Social Links */}
+                <div className="space-y-4">
+                  <p className="text-sm font-light tracking-wide text-muted-foreground">
+                    Connect with me
+                  </p>
+                  <div className="flex items-center gap-4">
+                    {photographerInfo.socialLinks.linkedin && (
+                      <a
+                        href={photographerInfo.socialLinks.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-3 border border-border rounded-sm hover:bg-accent transition-colors"
+                        aria-label="LinkedIn"
+                      >
+                        <Linkedin className="size-5" />
+                      </a>
+                    )}
+                    {photographerInfo.socialLinks.github && (
+                      <a
+                        href={photographerInfo.socialLinks.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-3 border border-border rounded-sm hover:bg-accent transition-colors"
+                        aria-label="GitHub"
+                      >
+                        <Github className="size-5" />
+                      </a>
+                    )}
+                    {photographerInfo.socialLinks.twitter && (
+                      <a
+                        href={photographerInfo.socialLinks.twitter}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-3 border border-border rounded-sm hover:bg-accent transition-colors"
+                        aria-label="X/Twitter"
+                      >
+                        <svg
+                          className="size-5"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
 
         {/* Bottom spacing */}
         <div className="h-16" />
