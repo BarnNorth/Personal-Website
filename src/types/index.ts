@@ -28,6 +28,9 @@ export interface Project {
   slug: string;
   liveUrl?: string;
   repoUrl?: string;
+  features?: string;
+  externalLink?: string;
+  tags?: string[];
 }
 
 export interface PhotographerInfo {
@@ -47,6 +50,8 @@ export interface PhotographerInfo {
     instagram?: string;
     linkedin?: string;
     behance?: string;
+    twitter?: string;
+    github?: string;
   };
   portraitImage: string;
 }
