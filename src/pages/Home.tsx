@@ -22,26 +22,15 @@ export default function Home() {
       <div className="min-h-screen">
         {/* Hero Section - Full viewport with featured image */}
       <section className="relative h-screen w-full overflow-hidden">
-        {/* Background Video */}
+        {/* Background Image */}
         <div className="absolute inset-0">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            poster="https://images.pexels.com/videos/2675516/free-video-2675516.jpg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"
+          <img
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjB8&ixlib=rb-4.1.0&q=80&w=1920"
+            alt="Digital technology background"
             className="w-full h-full object-cover"
-            onError={(e) => {
-              const target = e.currentTarget;
-              target.style.opacity = '0';
-            }}
-          >
-            <source src="https://videos.pexels.com/video-files/2675516/2675516-sd_960_540_24fps.mp4" type="video/mp4" />
-          </video>
-          {/* Video from Pexels */}
+          />
           {/* Gradient Overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70" />
         </div>
 
         {/* Hero Content */}
