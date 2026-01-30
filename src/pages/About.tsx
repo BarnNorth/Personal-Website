@@ -13,26 +13,6 @@ export default function About() {
       <SEOHead title="About" description={`Learn about ${photographerInfo.name}, ${photographerInfo.tagline}. ${photographerInfo.biography.split('\n\n')[0]}`} image={photographerInfo.portraitImage} />
       
       <div className="min-h-screen">
-        {/* Hero Section */}
-        <section className="py-24 md:py-32 px-6 lg:px-8 border-b border-border">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <motion.div initial={{
-            opacity: 0.8,
-            y: 10
-          }} animate={{
-            opacity: 1,
-            y: 0
-          }} transition={{
-            duration: 0.4
-          }}>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-wide mb-4">
-                About Me
-              </h1>
-              
-            </motion.div>
-          </div>
-        </section>
-
         {/* Portrait and Biography - Split Layout */}
         <section className="py-16 md:py-24 px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">

@@ -18,24 +18,6 @@ export default function Contact() {
       />
       
       <div className="min-h-screen">
-        {/* Hero Section */}
-        <section className="py-24 md:py-32 px-6 lg:px-8 border-b border-border">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <motion.div
-              initial={{ opacity: 0.8, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
-            >
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-wide mb-4">
-                Get In Touch
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground font-light tracking-wide max-w-2xl mx-auto">
-                Interested in working together or want to chat about AI, vibecoding, or building products? Reach out.
-              </p>
-            </motion.div>
-          </div>
-        </section>
-
         {/* Main Content */}
         <section className="py-16 md:py-24 px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
