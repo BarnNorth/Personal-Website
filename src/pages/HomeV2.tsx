@@ -1,4 +1,8 @@
 import { SEOHead } from '@/components/seo/SEOHead';
+import { motion } from 'framer-motion';
+import { photographerInfo } from '@/data/photographer';
+import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 /**
  * Home V2 page
@@ -12,13 +16,63 @@ export default function HomeV2() {
         description="Browse my projects built with AI and vibecoding - web apps, mobile apps, and creative experiments."
       />
       
-      <div>
-        {/* Content section */}
-        <section className="py-16 md:py-24">
-          <div className="max-w-6xl mx-auto px-6">
-            {/* Add content here */}
-          </div>
-        </section>
+      <div className="h-[calc(100vh-100px)] flex items-center justify-center">
+        {/* Hero Content */}
+        <div className="relative flex flex-col items-center justify-center px-6">
+          <motion.div
+            className="text-center space-y-6 max-w-4xl"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            <motion.h1
+              className="text-5xl md:text-7xl lg:text-8xl font-medium tracking-wide text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)]"
+              style={{ textShadow: '0 2px 16px rgba(0,0,0,0.6), 0 4px 32px rgba(0,0,0,0.4)' }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.2 }}
+            >
+              {photographerInfo.name}
+            </motion.h1>
+            
+            <motion.p
+              className="text-lg md:text-xl lg:text-2xl font-normal leading-relaxed text-white max-w-3xl mx-auto drop-shadow-[0_2px_12px_rgba(0,0,0,0.5)]"
+              style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.4 }}
+            >
+              {photographerInfo.heroIntroduction}
+            </motion.p>
+
+            {/* CTA Buttons */}
+            <motion.div
+              className="flex flex-col sm:flex-row gap-4 justify-center pt-6"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.6 }}
+            >
+              <Link to="/portfolio">
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="text-base font-medium tracking-wide px-8 bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-black shadow-lg shadow-black/30 transition-all"
+                >
+                  View Portfolio
+                </Button>
+              </Link>
+              <Link to="/about">
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="text-base font-medium tracking-wide px-8 bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-black shadow-lg shadow-black/30 transition-all"
+                >
+                  About Me
+                </Button>
+              </Link>
+            </motion.div>
+          </motion.div>
+        </div>
       </div>
     </>
   );
