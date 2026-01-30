@@ -9,29 +9,26 @@ import { SEOHead } from '@/components/seo/SEOHead';
  * Features split layout with portrait and comprehensive biography
  */
 export default function About() {
-  return (
-    <>
-      <SEOHead
-        title="About"
-        description={`Learn about ${photographerInfo.name}, ${photographerInfo.tagline}. ${photographerInfo.biography.split('\n\n')[0]}`}
-        image={photographerInfo.portraitImage}
-      />
+  return <>
+      <SEOHead title="About" description={`Learn about ${photographerInfo.name}, ${photographerInfo.tagline}. ${photographerInfo.biography.split('\n\n')[0]}`} image={photographerInfo.portraitImage} />
       
       <div className="min-h-screen">
         {/* Hero Section */}
         <section className="py-24 md:py-32 px-6 lg:px-8 border-b border-border">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <motion.div
-              initial={{ opacity: 0.8, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
-            >
+            <motion.div initial={{
+            opacity: 0.8,
+            y: 10
+          }} animate={{
+            opacity: 1,
+            y: 0
+          }} transition={{
+            duration: 0.4
+          }}>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-wide mb-4">
                 About Me
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground font-light tracking-wide">
-                {photographerInfo.tagline}
-              </p>
+              
             </motion.div>
           </div>
         </section>
@@ -41,73 +38,50 @@ export default function About() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
               {/* Portrait Image */}
-              <motion.div
-                className="space-y-6"
-                initial={{ opacity: 0.8, x: -10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4 }}
-              >
+              <motion.div className="space-y-6" initial={{
+              opacity: 0.8,
+              x: -10
+            }} whileInView={{
+              opacity: 1,
+              x: 0
+            }} viewport={{
+              once: true
+            }} transition={{
+              duration: 0.4
+            }}>
                 <div className="aspect-[3/4] relative overflow-hidden rounded-sm bg-muted">
-                  <img
-                    src={photographerInfo.portraitImage}
-                    alt={photographerInfo.name}
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
+                  <img src={photographerInfo.portraitImage} alt={photographerInfo.name} className="absolute inset-0 w-full h-full object-cover" />
                 </div>
                 
                 {/* Social Links */}
                 <div className="flex items-center gap-4">
-                  {photographerInfo.socialLinks.linkedin && (
-                    <a
-                      href={photographerInfo.socialLinks.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-3 border border-border rounded-sm hover:bg-accent transition-colors"
-                      aria-label="LinkedIn"
-                    >
+                  {photographerInfo.socialLinks.linkedin && <a href={photographerInfo.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="p-3 border border-border rounded-sm hover:bg-accent transition-colors" aria-label="LinkedIn">
                       <Linkedin className="size-5" />
-                    </a>
-                  )}
-                  {photographerInfo.socialLinks.github && (
-                    <a
-                      href={photographerInfo.socialLinks.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-3 border border-border rounded-sm hover:bg-accent transition-colors"
-                      aria-label="GitHub"
-                    >
+                    </a>}
+                  {photographerInfo.socialLinks.github && <a href={photographerInfo.socialLinks.github} target="_blank" rel="noopener noreferrer" className="p-3 border border-border rounded-sm hover:bg-accent transition-colors" aria-label="GitHub">
                       <Github className="size-5" />
-                    </a>
-                  )}
-                  {photographerInfo.socialLinks.twitter && (
-                    <a
-                      href={photographerInfo.socialLinks.twitter}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-3 border border-border rounded-sm hover:bg-accent transition-colors"
-                      aria-label="X/Twitter"
-                    >
-                      <svg
-                        className="size-5"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                      >
+                    </a>}
+                  {photographerInfo.socialLinks.twitter && <a href={photographerInfo.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="p-3 border border-border rounded-sm hover:bg-accent transition-colors" aria-label="X/Twitter">
+                      <svg className="size-5" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                       </svg>
-                    </a>
-                  )}
+                    </a>}
                 </div>
               </motion.div>
 
               {/* Biography and Info */}
-              <motion.div
-                className="space-y-8"
-                initial={{ opacity: 0.8, x: 10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.1 }}
-              >
+              <motion.div className="space-y-8" initial={{
+              opacity: 0.8,
+              x: 10
+            }} whileInView={{
+              opacity: 1,
+              x: 0
+            }} viewport={{
+              once: true
+            }} transition={{
+              duration: 0.4,
+              delay: 0.1
+            }}>
                 {/* Name and Tagline */}
                 <div className="space-y-3">
                   <h2 className="text-4xl md:text-5xl font-light tracking-wide">
@@ -122,24 +96,16 @@ export default function About() {
 
                 {/* Biography */}
                 <div className="space-y-4">
-                  {photographerInfo.biography.split('\n\n').map((paragraph, index) => (
-                    <p
-                      key={index}
-                      className="text-base md:text-lg font-light leading-relaxed text-muted-foreground"
-                    >
+                  {photographerInfo.biography.split('\n\n').map((paragraph, index) => <p key={index} className="text-base md:text-lg font-light leading-relaxed text-muted-foreground">
                       {paragraph}
-                    </p>
-                  ))}
+                    </p>)}
                 </div>
 
                 {/* Contact Info */}
                 <div className="pt-4 space-y-2">
                   <div className="text-sm font-light tracking-wide">
                     <span className="text-muted-foreground">Email: </span>
-                    <a
-                      href={`mailto:${photographerInfo.email}`}
-                      className="text-foreground hover:text-muted-foreground transition-colors"
-                    >
+                    <a href={`mailto:${photographerInfo.email}`} className="text-foreground hover:text-muted-foreground transition-colors">
                       {photographerInfo.email}
                     </a>
                   </div>
@@ -153,6 +119,5 @@ export default function About() {
           </div>
         </section>
       </div>
-    </>
-  );
+    </>;
 }
