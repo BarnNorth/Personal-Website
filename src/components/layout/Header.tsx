@@ -26,32 +26,22 @@ export function Header() {
   const { isScrolled } = useScrollPosition();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
-  // Header is transparent only on homepage hero when not scrolled
-  const isTransparent = location.pathname === '/' && !isScrolled;
+  // Always use dark transparent style since all pages have the background image
+  const _isTransparent = true;
 
   return (
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
-        isTransparent
-          ? 'bg-black/40 backdrop-blur-md border-b border-white/10'
-          : 'bg-background/95 backdrop-blur-lg border-b border-border shadow-md'
-      )}
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-black/40 backdrop-blur-md border-b border-white/10"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link
             to="/"
-            className={cn(
-              'text-lg font-light tracking-widest transition-all duration-300',
-              isTransparent
-                ? 'text-white hover:text-white/80'
-                : 'text-foreground hover:text-foreground/80'
-            )}
+            className="text-lg font-light tracking-widest transition-all duration-300 text-white hover:text-white/80"
           >
             <motion.span
               initial={{ opacity: 0, x: -20 }}
@@ -104,10 +94,7 @@ export function Header() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className={cn(
-                    'size-9',
-                    isTransparent && 'text-white hover:bg-white/10'
-                  )}
+                  className="size-9 text-white hover:bg-white/10"
                   aria-label="Open menu"
                 >
                   <Menu className="size-5" />
