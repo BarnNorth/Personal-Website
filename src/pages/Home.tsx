@@ -66,8 +66,9 @@ export default function Home() {
               >
                 <Link to="/portfolio">
                   <Button 
+                    variant="outline" 
                     size="lg" 
-                    className="text-base font-medium tracking-wide px-8 shadow-lg shadow-black/30 hover:shadow-xl hover:shadow-black/40 transition-shadow"
+                    className="text-base font-medium tracking-wide px-8 bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-black shadow-lg shadow-black/30 transition-all"
                   >
                     View Portfolio
                   </Button>
