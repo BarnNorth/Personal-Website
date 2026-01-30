@@ -11,7 +11,6 @@ import { cn } from '@/lib/utils';
 
 const navLinks = [
   { name: 'Home', path: '/' },
-  { name: 'Home V2', path: '/home-v2' },
   { name: 'Portfolio', path: '/portfolio' },
   { name: 'About', path: '/about' },
   { name: 'Contact', path: '/contact' },
