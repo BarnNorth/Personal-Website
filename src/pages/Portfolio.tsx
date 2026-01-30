@@ -18,24 +18,6 @@ export default function Portfolio() {
       />
       
       <div className="min-h-screen">
-        {/* Hero Section */}
-        <section className="relative py-24 md:py-32 px-6 lg:px-8 border-b border-border">
-          <div className="max-w-7xl mx-auto text-center space-y-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-wide mb-4">
-                Projects
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground font-light tracking-wide max-w-2xl mx-auto">
-                Things I've built with AI and vibecoding
-              </p>
-            </motion.div>
-          </div>
-        </section>
-
         {/* Projects Grid */}
         <section className="py-16 md:py-24">
           <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
