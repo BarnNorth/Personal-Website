@@ -3,7 +3,7 @@ import { photographerInfo } from '@/data/photographer';
 import linkedinLogo from '@/assets/linkedin-logo.jpeg';
 import xLogo from '@/assets/x-logo.jpeg';
 import githubLogo from '@/assets/github-logo.jpeg';
-import { Separator } from '@/components/ui/separator';
+
 import { SEOHead } from '@/components/seo/SEOHead';
 
 /**
@@ -75,7 +75,7 @@ export default function About() {
                   </div>
                 </div>
 
-                <Separator />
+                
 
                 {/* Social Links */}
                 

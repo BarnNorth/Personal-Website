@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Calendar, MapPin, Wrench, User } from 'lucide-react';
-import { Separator } from '@/components/ui/separator';
+
 import { SEOHead } from '@/components/seo/SEOHead';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { getProjectBySlug } from '@/data/projects';
@@ -96,7 +96,7 @@ export default function ProjectDetail() {
             </div>
           </div>
 
-          <Separator />
+          
 
           {/* Description */}
           <div className="space-y-4">
