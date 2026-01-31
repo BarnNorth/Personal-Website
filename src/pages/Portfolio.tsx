@@ -48,19 +48,6 @@ export default function Portfolio() {
                     </p>
 
 
-                    {/* Tags */}
-                    {project.tags && (
-                      <div className="flex flex-wrap gap-2">
-                        {project.tags.map((tag) => (
-                          <span
-                            key={tag}
-                            className="px-3 py-1 text-xs font-light tracking-wide bg-accent text-accent-foreground rounded-full"
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    )}
 
                     {/* CTA Button */}
                     {project.externalLink && (
