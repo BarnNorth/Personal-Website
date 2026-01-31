@@ -53,6 +53,7 @@ export interface PhotographerInfo {
   email: string;
   phone: string;
   availability: string;
+  careerStartDate: string; // ISO date string for calculating experience duration
   socialLinks: {
     instagram?: string;
     linkedin?: string;
