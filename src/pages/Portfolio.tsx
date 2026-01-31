@@ -33,7 +33,7 @@ export default function Portfolio() {
                         {project.title}
                       </h3>
                       
-                      <p className="text-muted-foreground font-light leading-relaxed">
+                      <p className="text-white/80 font-light leading-relaxed">
                         {project.description}
                       </p>
                     </div>
