@@ -12,10 +12,10 @@ export default function About() {
   return <>
       <SEOHead title="About" description={`Learn about ${photographerInfo.name}, ${photographerInfo.tagline}. ${photographerInfo.biography.split('\n\n')[0]}`} image={photographerInfo.portraitImage} />
       
-      <div>
+      <div className="h-[calc(100dvh-100px)] overflow-hidden">
         {/* Portrait and Biography - Split Layout */}
-        <section className="py-16 md:py-24 px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
+        <section className="h-full py-6 md:py-8 px-6 lg:px-8 flex items-center">
+          <div className="max-w-6xl mx-auto w-full">
             <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
               {/* Portrait Image */}
               <motion.div className="space-y-6" initial={{
@@ -29,7 +29,7 @@ export default function About() {
             }} transition={{
               duration: 0.4
             }}>
-                <div className="aspect-[3/4] relative overflow-hidden rounded-sm bg-muted">
+                <div className="aspect-[4/3] md:aspect-[3/4] max-h-[40vh] md:max-h-[60vh] relative overflow-hidden rounded-sm bg-muted">
                   <img src={photographerInfo.portraitImage} alt={photographerInfo.name} className="absolute inset-0 w-full h-full object-cover" />
                 </div>
                 

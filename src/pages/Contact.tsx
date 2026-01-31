@@ -17,10 +17,10 @@ export default function Contact() {
         description={`Get in touch with ${photographerInfo.name} for collaborations, projects, and inquiries. ${photographerInfo.availability}`}
       />
       
-      <div>
+      <div className="h-[calc(100dvh-100px)] overflow-hidden">
         {/* Main Content */}
-        <section className="py-16 md:py-24 px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto">
+        <section className="h-full py-6 md:py-8 px-6 lg:px-8 flex items-center">
+          <div className="max-w-5xl mx-auto w-full">
             <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
               {/* Contact Form */}
               <motion.div
