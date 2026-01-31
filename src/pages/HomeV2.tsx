@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { photographerInfo } from '@/data/photographer';
 import { getTimeSince } from '@/utils/dateUtils';
-
+import { LiveTracker } from '@/components/ui/LiveTracker';
 /**
  * Home page
  * Hero fills viewport height (minus header), content centered
@@ -12,7 +12,10 @@ import { getTimeSince } from '@/utils/dateUtils';
  */
 export default function HomeV2() {
   const techExperience = getTimeSince(photographerInfo.careerStartDate);
-  const heroText = `I'm Tommy Mulder, an IT professional turned vibecoder. I've spent ${techExperience.formatted} in big tech working on many things including Eng, Ops, and People projects. In my free time I build things.`;
+  
+  // Split hero text to wrap the dynamic duration in LiveTracker
+  const heroTextStart = "I'm Tommy Mulder, an IT professional turned vibecoder. I've spent ";
+  const heroTextEnd = " in big tech working on many things including Eng, Ops, and People projects. In my free time I build things.";
   return <>
       <SEOHead title="Home" description="Browse my projects built with AI and vibecoding - web apps, mobile apps, and creative experiments." />
       
@@ -55,7 +58,9 @@ export default function HomeV2() {
         }} style={{
           textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)'
         }}>
-            {heroText}
+            {heroTextStart}
+            <LiveTracker>{techExperience.formatted}</LiveTracker>
+            {heroTextEnd}
           </motion.p>
 
           {/* CTA Buttons */}
