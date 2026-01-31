@@ -13,7 +13,7 @@ import { getTimeSince } from '@/utils/dateUtils';
 export default function HomeV2() {
   const techExperience = getTimeSince(photographerInfo.careerStartDate);
 
-  const heroText = `I'm Tommy Mulder, an IT professional turned vibecoder. I spent ${techExperience.formatted} building AI systems and automation tools at Pinterest and Snap. Now I build things for myself.`;
+  const heroText = `I'm Tommy Mulder, an IT professional turned vibecoder. I've spent ${techExperience.formatted} in big tech working on many things including Eng, Ops, and People projects. In my free time I build things.`;
 
   return (
     <>
