@@ -15,9 +15,9 @@ export default function HomeV2() {
         description="Browse my projects built with AI and vibecoding - web apps, mobile apps, and creative experiments."
       />
       
-      <div>
+      <div className="flex-1 flex flex-col">
         {/* Hero Content */}
-        <section className="relative h-[calc(100vh-100px)] w-full flex flex-col items-center justify-center px-6">
+        <section className="flex-1 flex flex-col items-center justify-center px-6 py-8">
           <motion.div
             className="text-center space-y-6 max-w-4xl"
             initial={{ opacity: 0, y: 30 }}
@@ -25,7 +25,7 @@ export default function HomeV2() {
             transition={{ duration: 1, ease: "easeOut" }}
           >
             <motion.h1
-              className="text-5xl md:text-7xl lg:text-8xl font-medium tracking-wide text-foreground"
+              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium tracking-wide text-foreground"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
@@ -34,7 +34,7 @@ export default function HomeV2() {
             </motion.h1>
             
             <motion.p
-              className="text-lg md:text-xl lg:text-2xl font-normal leading-relaxed text-foreground/90 max-w-3xl mx-auto"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl font-normal leading-relaxed text-foreground/90 max-w-3xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
@@ -44,7 +44,7 @@ export default function HomeV2() {
 
             {/* CTA Buttons */}
             <motion.div
-              className="flex flex-col sm:flex-row gap-4 justify-center pt-6"
+              className="flex flex-col sm:flex-row gap-4 justify-center pt-4 sm:pt-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
