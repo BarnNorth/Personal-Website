@@ -1,6 +1,7 @@
 import { photographerInfo } from '@/data/photographer';
 import linkedinLogo from '@/assets/linkedin-logo.jpeg';
 import xLogo from '@/assets/x-logo.jpeg';
+import instagramLogo from '@/assets/instagram-logo.png';
 import githubLogo from '@/assets/github-logo.jpeg';
 
 /**
@@ -40,6 +41,17 @@ export function Footer() {
                 aria-label="X/Twitter"
               >
                 <img src={xLogo} alt="X" className="size-5 rounded-sm" />
+              </a>
+            )}
+            {photographerInfo.socialLinks.instagram && (
+              <a
+                href={photographerInfo.socialLinks.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-white transition-colors"
+                aria-label="Instagram"
+              >
+                <img src={instagramLogo} alt="Instagram" className="size-5 rounded-sm" />
               </a>
             )}
             {photographerInfo.socialLinks.github && (
