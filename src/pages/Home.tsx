@@ -68,7 +68,7 @@ export default function Home() {
                   <Button 
                     variant="outline" 
                     size="lg" 
-                    className="text-base font-medium tracking-wide px-8 bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-black shadow-lg shadow-black/30 transition-all"
+                    className="text-base font-medium tracking-wide px-8 bg-emerald-950/80 backdrop-blur-md border-2 border-white/30 text-white hover:bg-emerald-900/90 hover:border-white/50 shadow-lg shadow-black/30 transition-all"
                   >
                     View Portfolio
                   </Button>
@@ -77,7 +77,7 @@ export default function Home() {
                   <Button 
                     variant="outline" 
                     size="lg" 
-                    className="text-base font-medium tracking-wide px-8 bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-black shadow-lg shadow-black/30 transition-all"
+                    className="text-base font-medium tracking-wide px-8 bg-emerald-950/80 backdrop-blur-md border-2 border-white/30 text-white hover:bg-emerald-900/90 hover:border-white/50 shadow-lg shadow-black/30 transition-all"
                   >
                     About Me
                   </Button>
