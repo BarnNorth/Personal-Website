@@ -1,6 +1,10 @@
 import type { Project } from "@/types";
 import healthfreakPreview from "@/assets/projects/healthfreak-preview.png";
 import commutesdontsuckPreview from "@/assets/projects/commutesdontsuck-preview.png";
+import claudeLogo from "@/assets/logos/claude-logo.ico";
+import boltLogo from "@/assets/logos/bolt-logo.ico";
+import cursorLogo from "@/assets/logos/cursor-logo.ico";
+import expoLogo from "@/assets/logos/expo-logo.png";
 
 export const projects: Project[] = [
   {
@@ -25,6 +29,12 @@ export const projects: Project[] = [
     features: "Advanced AI Vision • Instant Analysis • Color-Coded Results • Scan History • Smart Caching",
     externalLink: "https://healthfreak.io",
     tags: ["AI", "React Native", "GPT-4 Vision", "OpenAI", "Mobile App"],
+    builtWith: [
+      { name: "Claude", logo: claudeLogo, url: "https://claude.ai/" },
+      { name: "Bolt", logo: boltLogo, url: "https://bolt.new/" },
+      { name: "Cursor", logo: cursorLogo, url: "https://cursor.com/" },
+      { name: "Expo", logo: expoLogo, url: "https://expo.dev/" },
+    ],
   },
   {
     id: "2",

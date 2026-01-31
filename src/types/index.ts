@@ -14,6 +14,12 @@ export interface ProjectImage {
   caption?: string;
 }
 
+export interface BuiltWithTool {
+  name: string;
+  logo: string;
+  url: string;
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -31,6 +37,7 @@ export interface Project {
   features?: string;
   externalLink?: string;
   tags?: string[];
+  builtWith?: BuiltWithTool[];
 }
 
 export interface PhotographerInfo {
