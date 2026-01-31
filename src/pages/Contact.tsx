@@ -40,7 +40,7 @@ export default function Contact() {
               <Separator />
 
               {/* Contact Details */}
-              <div className="space-y-6 flex flex-col items-center">
+              <div className="space-y-6 flex flex-col items-start mx-auto w-fit">
                 {/* Email */}
                 <div className="flex items-center gap-4">
                   <div className="p-3 rounded-sm bg-white/10">
