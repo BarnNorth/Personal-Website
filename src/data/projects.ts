@@ -45,7 +45,7 @@ export const projects: Project[] = [
     slug: "commutes-dont-suck",
     coverImage: commutesdontsuckPreview,
     description:
-      "Get exact commute times instead of vague ranges. This app tracks your routes at specific times and days to give you real traffic data based on actual conditions. No more '25-45 minutes'—know that your Monday 8am commute averages exactly 32 minutes. Built with React, TypeScript, and Google Maps Directions API.",
+      "Get exact commute times instead of vague ranges. Traditional map apps show you estimated ranges like \"25-45 minutes\" which aren't helpful for planning. We allow you to track real traffic data over time so you know exactly what you're signing up for. Enter your home and work addresses. Set the exact time you leave each day. Every day at your scheduled time, we capture the exact traffic duration—not a range. View your commute history to find the fastest days and times based on real data.",
     tools: "React, TypeScript, Google Maps API, Supabase, Real-time Data",
     location: "commutesdontsuck.com",
     images: [
