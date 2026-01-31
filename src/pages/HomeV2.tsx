@@ -43,7 +43,7 @@ export default function HomeV2() {
             BarnNorth Studios
           </motion.h1>
           
-          <motion.p className="text-base sm:text-lg md:text-xl leading-relaxed text-white/95 max-w-3xl mx-auto font-medium lg:text-xl drop-shadow-lg" initial={{
+          <motion.p className="text-base sm:text-lg md:text-xl leading-relaxed text-white/95 max-w-3xl mx-auto font-medium lg:text-xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]" initial={{
           opacity: 0,
           y: 20
         }} animate={{
