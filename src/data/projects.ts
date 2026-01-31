@@ -1,4 +1,6 @@
 import type { Project } from '@/types';
+import healthfreakPreview from '@/assets/projects/healthfreak-preview.png';
+import commutesdontsuckPreview from '@/assets/projects/commutesdontsuck-preview.png';
 
 export const projects: Project[] = [
   {
@@ -7,14 +9,14 @@ export const projects: Project[] = [
     category: 'ai-art',
     year: '2024',
     slug: 'health-freak',
-    coverImage: 'https://images.unsplash.com/photo-1490818387583-1baba5e638af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHNlYXJjaHwzfHxoZWFsdGh5JTIwZm9vZHxlbnwwfHx8fDE3MzU2MDAwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    coverImage: healthfreakPreview,
     description: 'Your AI-powered food ingredient scanner. Snap a photo of any ingredient list and get instant analysis of which ingredients are clean and which to avoid. Built with React Native and powered by OpenAI\'s GPT-4 Vision for OCR and ingredient classification. Features smart caching for near-instant results and a color-coded system that evaluates ingredients through a wellness-focused, \'crunchy lifestyle\' lens.',
     tools: 'React Native, GPT-4 Vision, OpenAI, Mobile App',
     location: 'healthfreak.io',
     images: [
       {
         id: '1-1',
-        src: 'https://images.unsplash.com/photo-1490818387583-1baba5e638af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHNlYXJjaHwzfHxoZWFsdGh5JTIwZm9vZHxlbnwwfHx8fDE3MzU2MDAwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+        src: healthfreakPreview,
         alt: 'Health Freak app screenshot',
         aspectRatio: 'portrait'
       }
@@ -29,14 +31,14 @@ export const projects: Project[] = [
     category: 'web-apps',
     year: '2024',
     slug: 'commutes-dont-suck',
-    coverImage: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHNlYXJjaHwxfHxjb21tdXRlfGVufDB8fHx8MTczNTYwMDAwMHww&ixlib=rb-4.1.0&q=80&w=1080',
+    coverImage: commutesdontsuckPreview,
     description: 'Get exact commute times instead of vague ranges. This app tracks your routes at specific times and days to give you real traffic data based on actual conditions. No more \'25-45 minutes\'—know that your Monday 8am commute averages exactly 32 minutes. Built with React, TypeScript, and Google Maps Directions API.',
     tools: 'React, TypeScript, Google Maps API, Supabase, Real-time Data',
     location: 'commutesdontsuck.com',
     images: [
       {
         id: '2-1',
-        src: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHNlYXJjaHwxfHxjb21tdXRlfGVufDB8fHx8MTczNTYwMDAwMHww&ixlib=rb-4.1.0&q=80&w=1080',
+        src: commutesdontsuckPreview,
         alt: 'CommutesDontSuck app interface',
         aspectRatio: 'landscape'
       }
