@@ -43,7 +43,7 @@ export default function HomeV2() {
             BarnNorth Studios
           </motion.h1>
           
-          <motion.p className="text-base sm:text-lg md:text-xl leading-relaxed text-white/95 max-w-3xl mx-auto font-medium lg:text-xl" initial={{
+          <motion.p className="text-base sm:text-lg md:text-xl leading-relaxed text-white/95 max-w-3xl mx-auto font-medium lg:text-xl drop-shadow-lg" initial={{
           opacity: 0,
           y: 20
         }} animate={{
@@ -53,7 +53,7 @@ export default function HomeV2() {
           duration: 1,
           delay: 0.4
         }} style={{
-          textShadow: '0 1px 8px rgba(0,0,0,0.7), 0 2px 16px rgba(0,0,0,0.5)'
+          textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)'
         }}>
             {heroText}
           </motion.p>
