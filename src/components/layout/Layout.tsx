@@ -17,7 +17,7 @@ export function Layout({ children }: LayoutProps) {
   const isHomepage = location.pathname === '/';
 
   return (
-    <div className="min-h-screen flex flex-col relative">
+    <div className="h-screen flex flex-col relative overflow-hidden">
       {/* Background image for all routes */}
       <div className="fixed inset-0 -z-10">
         <img
@@ -31,7 +31,7 @@ export function Layout({ children }: LayoutProps) {
       <Header />
       <main 
         id="main-content" 
-        className="flex-1 pt-16"
+        className="flex-1 flex flex-col pt-16 overflow-auto"
         tabIndex={-1}
       >
         {children}
