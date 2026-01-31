@@ -81,7 +81,7 @@ export default function About() {
                 
 
                 {/* Biography */}
-                <div className="space-y-4">
+                <div className="space-y-2">
                   {photographerInfo.biography.split('\n\n').map((paragraph, index) => <p key={index} className="text-base md:text-lg font-light leading-relaxed text-muted-foreground">
                       {paragraph}
                     </p>)}
