@@ -57,9 +57,22 @@ export default function About() {
                   <h2 className="text-4xl md:text-5xl font-light tracking-wide">
                     {photographerInfo.name}
                   </h2>
-                  <p className="text-muted-foreground font-light tracking-wide text-sm">
-                    {photographerInfo.tagline}
-                  </p>
+                  <div className="flex items-center justify-between gap-4">
+                    <p className="text-muted-foreground font-light tracking-wide text-sm">
+                      {photographerInfo.tagline}
+                    </p>
+                    <div className="flex items-center gap-3">
+                      {photographerInfo.socialLinks.linkedin && <a href={photographerInfo.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="LinkedIn">
+                          <img src={linkedinLogo} alt="LinkedIn" className="size-5 rounded-sm" />
+                        </a>}
+                      {photographerInfo.socialLinks.twitter && <a href={photographerInfo.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="X/Twitter">
+                          <img src={xLogo} alt="X" className="size-5 rounded-sm" />
+                        </a>}
+                      {photographerInfo.socialLinks.github && <a href={photographerInfo.socialLinks.github} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="GitHub">
+                          <img src={githubLogo} alt="GitHub" className="size-5 rounded-full" />
+                        </a>}
+                    </div>
+                  </div>
                 </div>
 
                 <Separator />
