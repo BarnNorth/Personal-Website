@@ -2,9 +2,9 @@ import type { Project } from "@/types";
 import healthfreakPreview from "@/assets/projects/healthfreak-preview.png";
 import commutesdontsuckPreview from "@/assets/projects/commutesdontsuck-preview.png";
 import claudeLogo from "@/assets/logos/claude-logo.ico";
-import boltLogo from "@/assets/logos/bolt-logo.ico";
+import boltLogo from "@/assets/logos/bolt-logo.jpeg";
 import cursorLogo from "@/assets/logos/cursor-logo.ico";
-import expoLogo from "@/assets/logos/expo-logo.png";
+import expoLogo from "@/assets/logos/expo-logo.jpeg";
 
 export const projects: Project[] = [
   {
