@@ -79,15 +79,15 @@ export default function Contact() {
                 <p className="text-sm font-light tracking-wide text-white/70">
                   Connect with me
                 </p>
-                <div className="flex items-center justify-center gap-4">
-                  {photographerInfo.socialLinks.linkedin && <a href={photographerInfo.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="p-3 border border-white/30 rounded-sm hover:bg-white/10 transition-colors" aria-label="LinkedIn">
-                      <img src={linkedinLogo} alt="LinkedIn" className="size-5 rounded-sm" />
+                <div className="flex items-center justify-center gap-6">
+                  {photographerInfo.socialLinks.linkedin && <a href={photographerInfo.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="LinkedIn">
+                      <img src={linkedinLogo} alt="LinkedIn" className="size-8 rounded-sm" />
                     </a>}
-                  {photographerInfo.socialLinks.twitter && <a href={photographerInfo.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="p-3 border border-white/30 rounded-sm hover:bg-white/10 transition-colors" aria-label="X/Twitter">
-                      <img src={xLogo} alt="X" className="size-5 rounded-sm" />
+                  {photographerInfo.socialLinks.twitter && <a href={photographerInfo.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="X/Twitter">
+                      <img src={xLogo} alt="X" className="size-8 rounded-sm" />
                     </a>}
-                  {photographerInfo.socialLinks.github && <a href={photographerInfo.socialLinks.github} target="_blank" rel="noopener noreferrer" className="p-3 border border-white/30 rounded-sm hover:bg-white/10 transition-colors" aria-label="GitHub">
-                      <img src={githubLogo} alt="GitHub" className="size-5 rounded-full" />
+                  {photographerInfo.socialLinks.github && <a href={photographerInfo.socialLinks.github} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="GitHub">
+                      <img src={githubLogo} alt="GitHub" className="size-8 rounded-full" />
                     </a>}
                 </div>
               </div>
