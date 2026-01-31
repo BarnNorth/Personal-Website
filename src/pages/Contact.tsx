@@ -32,7 +32,7 @@ export default function Contact() {
                 <h2 className="text-3xl md:text-4xl font-light tracking-wide text-white">
                   Contact Information
                 </h2>
-                <p className="text-white/80 font-light">
+                <p className="text-white/100 font-light">
                   Want to chat? Here's how you can contact me.
                 </p>
               </div>
