@@ -28,7 +28,7 @@ export default function Portfolio() {
                 className="block h-full"
               >
                 <motion.div
-                  className="group relative bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-all duration-300 h-full cursor-pointer"
+                  className="group relative bg-emerald-950/80 backdrop-blur-md border border-emerald-800/50 rounded-lg overflow-hidden hover:border-emerald-600/50 transition-all duration-300 h-full cursor-pointer"
                   whileHover={{ y: -4 }}
                 >
                   {/* Project Image */}
