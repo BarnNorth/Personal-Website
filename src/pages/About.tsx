@@ -36,17 +36,7 @@ export default function About() {
                 </div>
                 
                 {/* Social Links */}
-                <div className="flex items-center gap-4">
-                  {photographerInfo.socialLinks.linkedin && <a href={photographerInfo.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="p-3 border border-border rounded-sm hover:bg-accent transition-colors" aria-label="LinkedIn">
-                      <img src={linkedinLogo} alt="LinkedIn" className="size-5 rounded-sm" />
-                    </a>}
-                  {photographerInfo.socialLinks.twitter && <a href={photographerInfo.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="p-3 border border-border rounded-sm hover:bg-accent transition-colors" aria-label="X/Twitter">
-                      <img src={xLogo} alt="X" className="size-5 rounded-sm" />
-                    </a>}
-                  {photographerInfo.socialLinks.github && <a href={photographerInfo.socialLinks.github} target="_blank" rel="noopener noreferrer" className="p-3 border border-border rounded-sm hover:bg-accent transition-colors" aria-label="GitHub">
-                      <img src={githubLogo} alt="GitHub" className="size-5 rounded-full" />
-                    </a>}
-                </div>
+                
               </motion.div>
 
               {/* Biography and Info */}
