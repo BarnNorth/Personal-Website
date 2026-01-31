@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Mail, MapPin } from 'lucide-react';
 import { photographerInfo } from '@/data/photographer';
-import { Separator } from '@/components/ui/separator';
+
 import linkedinLogo from '@/assets/linkedin-logo.jpeg';
 import xLogo from '@/assets/x-logo.jpeg';
 import githubLogo from '@/assets/github-logo.jpeg';
@@ -37,7 +37,6 @@ export default function Contact() {
                 </p>
               </div>
 
-              <Separator />
 
               {/* Contact Details */}
               <div className="space-y-6 flex flex-col items-start mx-auto w-fit">
@@ -72,7 +71,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <Separator />
+              
 
               {/* Social Links */}
               <div className="space-y-4">
