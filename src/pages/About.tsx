@@ -58,7 +58,7 @@ export default function About() {
                     {photographerInfo.name}
                   </h2>
                   <div className="flex items-center justify-between gap-4">
-                    <p className="text-muted-foreground font-light tracking-wide text-sm">
+                    <p className="text-white/70 font-light tracking-wide text-sm">
                       {photographerInfo.tagline}
                     </p>
                     <div className="flex items-center gap-3">
@@ -82,7 +82,7 @@ export default function About() {
 
                 {/* Biography */}
                 <div className="space-y-2">
-                  {photographerInfo.biography.split('\n\n').map((paragraph, index) => <p key={index} className="text-base md:text-lg font-light leading-relaxed text-muted-foreground">
+                  {photographerInfo.biography.split('\n\n').map((paragraph, index) => <p key={index} className="text-base md:text-lg font-light leading-relaxed text-white/90">
                       {paragraph}
                     </p>)}
                 </div>
