@@ -15,7 +15,7 @@ export const projects: Project[] = [
     slug: "health-freak",
     coverImage: healthfreakPreview,
     description:
-      "Your AI-powered food ingredient scanner. Snap a photo of any ingredient list and get instant analysis of which ingredients are clean and which to avoid. Built with React Native and powered by OpenAI's GPT-4 Vision for OCR and ingredient classification. Features smart caching for near-instant results and a color-coded system that evaluates ingredients through a wellness-focused, 'crunchy lifestyle' lens.",
+      "Your AI-powered food ingredient scanner. Snap a photo of any ingredient list and get instant analysis of which ingredients are clean and which to avoid. Built with React Native and powered by OpenAI models for OCR and ingredient classification. Features smart caching for near-instant results and a color-coded system that evaluates ingredients through a wellness-focused, 'crunchy lifestyle' lens.",
     tools: "React Native, GPT-4 Vision, OpenAI, Mobile App",
     location: "healthfreak.io",
     images: [
