@@ -11,13 +11,14 @@ interface LayoutProps {
 /**
  * Main layout wrapper component
  * Provides consistent header and footer across all pages
+ * Uses sticky header with normal document flow
  */
 export function Layout({ children }: LayoutProps) {
   const location = useLocation();
   const isHomepage = location.pathname === '/';
 
   return (
-    <div className="h-screen flex flex-col relative overflow-hidden">
+    <div className="min-h-screen flex flex-col relative">
       {/* Background image for all routes */}
       <div className="fixed inset-0 -z-10">
         <img
@@ -31,7 +32,7 @@ export function Layout({ children }: LayoutProps) {
       <Header />
       <main 
         id="main-content" 
-        className="flex-1 flex flex-col pt-16 overflow-auto"
+        className="flex-1 flex flex-col"
         tabIndex={-1}
       >
         {children}
