@@ -50,7 +50,7 @@ export default function About() {
               </motion.div>
 
               {/* Biography and Info */}
-              <motion.div className="space-y-8" initial={{
+              <motion.div className="space-y-8 bg-emerald-950/80 backdrop-blur-md border border-emerald-800/50 rounded-lg p-8" initial={{
               opacity: 0.8,
               x: 10
             }} whileInView={{
