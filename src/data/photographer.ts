@@ -30,6 +30,7 @@ Whether I'm prompting AI models to generate stunning visuals, building web appli
   socialLinks: {
     linkedin: "http://www.linkedin.com/in/tommy-mulder-a800905b",
     twitter: "https://twitter.com/barn_north",
+    instagram: "https://www.instagram.com/tommyjaymulder/",
     github: "https://github.com/BarnNorth",
   },
   portraitImage: portraitImage,
