@@ -4,14 +4,14 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
 /**
- * Home V2 page
+ * Home page
  * Features smooth animations and responsive layout
  */
 export default function HomeV2() {
   return (
     <>
       <SEOHead 
-        title="Home V2"
+        title="Home"
         description="Browse my projects built with AI and vibecoding - web apps, mobile apps, and creative experiments."
       />
       
