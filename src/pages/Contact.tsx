@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Linkedin, Github } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import { photographerInfo } from '@/data/photographer';
 import { Separator } from '@/components/ui/separator';
+import linkedinLogo from '@/assets/linkedin-logo.jpeg';
+import xLogo from '@/assets/x-logo.jpeg';
+import githubLogo from '@/assets/github-logo.jpeg';
 import { SEOHead } from '@/components/seo/SEOHead';
 
 /**
@@ -78,15 +81,13 @@ export default function Contact() {
                 </p>
                 <div className="flex items-center justify-center gap-4">
                   {photographerInfo.socialLinks.linkedin && <a href={photographerInfo.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="p-3 border border-white/30 rounded-sm hover:bg-white/10 transition-colors" aria-label="LinkedIn">
-                      <Linkedin className="size-5 text-white" />
-                    </a>}
-                  {photographerInfo.socialLinks.github && <a href={photographerInfo.socialLinks.github} target="_blank" rel="noopener noreferrer" className="p-3 border border-white/30 rounded-sm hover:bg-white/10 transition-colors" aria-label="GitHub">
-                      <Github className="size-5 text-white" />
+                      <img src={linkedinLogo} alt="LinkedIn" className="size-5 rounded-sm" />
                     </a>}
                   {photographerInfo.socialLinks.twitter && <a href={photographerInfo.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="p-3 border border-white/30 rounded-sm hover:bg-white/10 transition-colors" aria-label="X/Twitter">
-                      <svg className="size-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                      </svg>
+                      <img src={xLogo} alt="X" className="size-5 rounded-sm" />
+                    </a>}
+                  {photographerInfo.socialLinks.github && <a href={photographerInfo.socialLinks.github} target="_blank" rel="noopener noreferrer" className="p-3 border border-white/30 rounded-sm hover:bg-white/10 transition-colors" aria-label="GitHub">
+                      <img src={githubLogo} alt="GitHub" className="size-5 rounded-full" />
                     </a>}
                 </div>
               </div>
