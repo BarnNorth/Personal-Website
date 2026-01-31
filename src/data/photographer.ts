@@ -23,7 +23,7 @@ Whether I'm prompting AI models to generate stunning visuals, building web appli
   ],
   clients: ["Pinterest", "Snap Inc.", "Personal Projects"],
   education: "Self-taught vibecoder & AI enthusiast",
-  location: "San Diego, CA",
+  location: "San Diego Metropolitan Area",
   email: "tmulder3@gmail.com",
   phone: "",
   availability: "Open to collaborations and new projects",
