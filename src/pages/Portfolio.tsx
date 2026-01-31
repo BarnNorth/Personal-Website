@@ -47,12 +47,6 @@ export default function Portfolio() {
                       {project.description}
                     </p>
 
-                    {/* Features */}
-                    {project.features && (
-                      <p className="text-sm text-primary font-light">
-                        {project.features}
-                      </p>
-                    )}
 
                     {/* Tags */}
                     {project.tags && (
