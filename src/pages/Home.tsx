@@ -32,14 +32,13 @@ export default function Home() {
           {/* Hero Content */}
           <div className="relative h-full flex flex-col items-center justify-center px-6">
             <motion.div
-              className="text-center space-y-6 max-w-4xl"
+              className="text-center space-y-6 max-w-4xl bg-black/50 backdrop-blur-sm rounded-xl p-8 md:p-12"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
             >
               <motion.h1
-                className="text-5xl md:text-7xl lg:text-8xl font-medium tracking-wide text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)]"
-                style={{ textShadow: '0 2px 16px rgba(0,0,0,0.6), 0 4px 32px rgba(0,0,0,0.4)' }}
+                className="text-5xl md:text-7xl lg:text-8xl font-medium tracking-wide text-white"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.2 }}
@@ -48,8 +47,7 @@ export default function Home() {
               </motion.h1>
               
               <motion.p
-                className="text-lg md:text-xl lg:text-2xl font-normal leading-relaxed text-white max-w-3xl mx-auto drop-shadow-[0_2px_12px_rgba(0,0,0,0.5)]"
-                style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}
+                className="text-lg md:text-xl lg:text-2xl font-normal leading-relaxed text-white/90 max-w-3xl mx-auto"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.4 }}
