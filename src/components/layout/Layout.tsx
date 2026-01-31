@@ -31,7 +31,7 @@ export function Layout({ children }: LayoutProps) {
       <Header />
       <main 
         id="main-content" 
-        className={`flex-1 flex flex-col overflow-auto ${isHomepage ? '' : 'pt-16'}`}
+        className="flex-1 flex flex-col pt-16 overflow-auto"
         tabIndex={-1}
       >
         {children}
