@@ -5,6 +5,7 @@ import claudeLogo from "@/assets/logos/claude-logo.ico";
 import boltLogo from "@/assets/logos/bolt-logo.jpeg";
 import cursorLogo from "@/assets/logos/cursor-logo.ico";
 import expoLogo from "@/assets/logos/expo-logo.jpeg";
+import lovableLogo from "@/assets/logos/lovable-logo.ico";
 
 export const projects: Project[] = [
   {
@@ -58,6 +59,9 @@ export const projects: Project[] = [
     features: "Route Management • Flexible Scheduling • Traffic-Aware Data • Historical Tracking • Pattern Analysis",
     externalLink: "https://commutesdontsuck.com",
     tags: ["React", "TypeScript", "Google Maps API", "Supabase", "Real-time Data"],
+    builtWith: [
+      { name: "Lovable", logo: lovableLogo, url: "https://lovable.dev/" },
+    ],
   },
 ];
 
