@@ -13,7 +13,7 @@ export default function Contact() {
       
       <div>
         {/* Main Content */}
-        <section className="py-16 md:py-24 px-6 lg:px-8">
+        <section className="py-16 px-6 lg:px-8 md:py-[40px]">
           <div className="max-w-2xl mx-auto">
             {/* Contact Information */}
             <motion.div className="space-y-8 text-center text-white bg-emerald-950/80 backdrop-blur-sm rounded-sm p-8 md:p-12" initial={{
