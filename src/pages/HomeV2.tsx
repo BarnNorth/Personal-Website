@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { photographerInfo } from '@/data/photographer';
+import { getTimeSince } from '@/utils/dateUtils';
 
 /**
  * Home page
@@ -9,6 +11,10 @@ import { Link } from 'react-router-dom';
  * Footer appears below the fold on scroll
  */
 export default function HomeV2() {
+  const techExperience = getTimeSince(photographerInfo.careerStartDate);
+
+  const heroText = `I'm Tommy Mulder, an IT professional turned vibecoder. I spent ${techExperience.formatted} building AI systems and automation tools at Pinterest and Snap. Now I build things for myself.`;
+
   return (
     <>
       <SEOHead 
@@ -41,7 +47,7 @@ export default function HomeV2() {
             transition={{ duration: 1, delay: 0.4 }}
             style={{ textShadow: '0 1px 8px rgba(0,0,0,0.7), 0 2px 16px rgba(0,0,0,0.5)' }}
           >
-            I'm Tommy Mulder, an IT professional turned vibecoder. I spent 8 years building AI systems and automation tools at Pinterest and Snap. Now I build things for myself.
+            {heroText}
           </motion.p>
 
           {/* CTA Buttons */}
