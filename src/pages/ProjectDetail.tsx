@@ -72,10 +72,10 @@ export default function ProjectDetail() {
         >
           {/* Title and Category */}
           <div className="space-y-4">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-wide">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-white">
               {project.title}
             </h1>
-            <div className="flex flex-wrap gap-6 text-sm text-muted-foreground font-light">
+            <div className="flex flex-wrap gap-6 text-sm text-white/70 font-light">
               <div className="flex items-center gap-2">
                 <Calendar className="size-4" />
                 <span>{project.year}</span>
@@ -100,7 +100,7 @@ export default function ProjectDetail() {
 
           {/* Description */}
           <div className="space-y-4">
-            <p className="text-lg md:text-xl font-light leading-relaxed text-foreground">
+            <p className="text-lg md:text-xl font-light leading-relaxed text-white">
               {project.description}
             </p>
           </div>
@@ -109,20 +109,20 @@ export default function ProjectDetail() {
           <div className="grid md:grid-cols-2 gap-6 pt-4">
             {project.tools && (
               <div className="space-y-2">
-                <div className="flex items-center gap-2 text-sm font-light tracking-wide uppercase text-muted-foreground">
+                <div className="flex items-center gap-2 text-sm font-light tracking-wide uppercase text-white/70">
                   <Wrench className="size-4" />
                   <span>Tools</span>
                 </div>
-                <p className="font-light text-foreground">{project.tools}</p>
+                <p className="font-light text-white">{project.tools}</p>
               </div>
             )}
             {project.client && (
               <div className="space-y-2">
-                <div className="flex items-center gap-2 text-sm font-light tracking-wide uppercase text-muted-foreground">
+                <div className="flex items-center gap-2 text-sm font-light tracking-wide uppercase text-white/70">
                   <User className="size-4" />
                   <span>Client</span>
                 </div>
-                <p className="font-light text-foreground">{project.client}</p>
+                <p className="font-light text-white">{project.client}</p>
               </div>
             )}
           </div>

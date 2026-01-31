@@ -29,7 +29,7 @@ const NotFound = () => {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            <h1 className="text-[120px] md:text-[180px] font-extralight tracking-wider leading-none text-foreground/10">
+            <h1 className="text-[120px] md:text-[180px] font-extralight tracking-wider leading-none text-white/10">
               404
             </h1>
           </motion.div>
@@ -37,7 +37,7 @@ const NotFound = () => {
           {/* Content */}
           <div className="space-y-4 -mt-8">
             <motion.h2
-              className="text-3xl md:text-5xl font-light tracking-wide"
+              className="text-3xl md:text-5xl font-light tracking-wide text-white"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
@@ -46,7 +46,7 @@ const NotFound = () => {
             </motion.h2>
             
             <motion.p
-              className="text-base md:text-lg text-muted-foreground font-light leading-relaxed max-w-md mx-auto"
+              className="text-base md:text-lg text-white/70 font-light leading-relaxed max-w-md mx-auto"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
@@ -81,7 +81,7 @@ const NotFound = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.8 }}
           >
-            <div className="h-px w-24 mx-auto bg-border" />
+            <div className="h-px w-24 mx-auto bg-white/20" />
           </motion.div>
         </motion.div>
       </main>

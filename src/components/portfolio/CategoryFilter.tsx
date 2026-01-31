@@ -29,7 +29,7 @@ export function CategoryFilter({
               'relative px-6 py-2.5 text-sm font-light tracking-wide rounded-sm transition-all duration-300',
               isActive
                 ? 'text-primary-foreground'
-                : 'text-muted-foreground hover:text-foreground border border-border hover:border-foreground/20'
+                : 'text-white/70 hover:text-white border border-white/30 hover:border-white/50'
             )}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
