@@ -1,8 +1,6 @@
 import { projects } from '@/data/projects';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { ExternalLink } from 'lucide-react';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 
 /**
@@ -23,8 +21,14 @@ export default function Portfolio() {
           <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <ScrollReveal key={project.id} delay={index * 0.1}>
+              <a
+                href={project.externalLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block h-full"
+              >
                 <motion.div
-                  className="group relative bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-all duration-300 h-full"
+                  className="group relative bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-all duration-300 h-full cursor-pointer"
                   whileHover={{ y: -4 }}
                 >
                   {/* Project Image */}
@@ -46,25 +50,9 @@ export default function Portfolio() {
                     <p className="text-muted-foreground font-light leading-relaxed">
                       {project.description}
                     </p>
-
-
-
-                    {/* CTA Button */}
-                    {project.externalLink && (
-                      <a
-                        href={project.externalLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 mt-4"
-                      >
-                        <Button className="font-light tracking-wide">
-                          {project.id === '1' ? 'Try Health Freak' : 'Check Your Commute'}
-                          <ExternalLink className="size-4 ml-2" />
-                        </Button>
-                      </a>
-                    )}
                   </div>
                 </motion.div>
+              </a>
               </ScrollReveal>
             ))}
           </div>
