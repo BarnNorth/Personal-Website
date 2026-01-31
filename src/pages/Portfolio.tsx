@@ -38,7 +38,7 @@ export default function Portfolio() {
 
                     {/* Built With Tools */}
                     {project.builtWith && <div className="flex items-center gap-2 pt-2">
-                        <span className="text-xs text-white/60 uppercase tracking-wider bg-white/0">Built with</span>
+                        <span className="text-xs text-white/100 uppercase tracking-wider bg-white/0">Built with</span>
                         <div className="flex items-center gap-3">
                           {project.builtWith.map(tool => <a key={tool.name} href={tool.url} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()} className="opacity-90 hover:opacity-100 transition-opacity" title={tool.name}>
                               <img src={tool.logo} alt={tool.name} className="w-5 h-5 rounded-sm brightness-110" />
