@@ -21,16 +21,16 @@ export default function Contact() {
           <div className="max-w-2xl mx-auto">
             {/* Contact Information */}
             <motion.div
-              className="space-y-8"
+              className="space-y-8 text-center text-white"
               initial={{ opacity: 0.8, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
             >
               <div className="space-y-3">
-                <h2 className="text-3xl md:text-4xl font-light tracking-wide">
+                <h2 className="text-3xl md:text-4xl font-light tracking-wide text-white">
                   Contact Information
                 </h2>
-                <p className="text-muted-foreground font-light">
+                <p className="text-white/80 font-light">
                   Prefer to reach out directly? Here's how you can contact me.
                 </p>
               </div>
@@ -38,19 +38,19 @@ export default function Contact() {
               <Separator />
 
               {/* Contact Details */}
-              <div className="space-y-6">
+              <div className="space-y-6 flex flex-col items-center">
                 {/* Email */}
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-sm bg-accent">
-                    <Mail className="size-5 text-muted-foreground" />
+                <div className="flex items-center gap-4">
+                  <div className="p-3 rounded-sm bg-white/10">
+                    <Mail className="size-5 text-white" />
                   </div>
-                  <div className="space-y-1">
-                    <p className="text-sm font-light tracking-wide text-muted-foreground">
+                  <div className="space-y-1 text-left">
+                    <p className="text-sm font-light tracking-wide text-white/70">
                       Email
                     </p>
                     <a
                       href={`mailto:${photographerInfo.email}`}
-                      className="text-base md:text-lg font-light hover:text-muted-foreground transition-colors"
+                      className="text-base md:text-lg font-light text-white hover:text-white/80 transition-colors"
                     >
                       {photographerInfo.email}
                     </a>
@@ -58,15 +58,15 @@ export default function Contact() {
                 </div>
 
                 {/* Location */}
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-sm bg-accent">
-                    <MapPin className="size-5 text-muted-foreground" />
+                <div className="flex items-center gap-4">
+                  <div className="p-3 rounded-sm bg-white/10">
+                    <MapPin className="size-5 text-white" />
                   </div>
-                  <div className="space-y-1">
-                    <p className="text-sm font-light tracking-wide text-muted-foreground">
+                  <div className="space-y-1 text-left">
+                    <p className="text-sm font-light tracking-wide text-white/70">
                       Location
                     </p>
-                    <p className="text-base md:text-lg font-light">
+                    <p className="text-base md:text-lg font-light text-white">
                       {photographerInfo.location}
                     </p>
                   </div>
@@ -77,19 +77,19 @@ export default function Contact() {
 
               {/* Social Links */}
               <div className="space-y-4">
-                <p className="text-sm font-light tracking-wide text-muted-foreground">
+                <p className="text-sm font-light tracking-wide text-white/70">
                   Connect with me
                 </p>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center justify-center gap-4">
                   {photographerInfo.socialLinks.linkedin && (
                     <a
                       href={photographerInfo.socialLinks.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-3 border border-border rounded-sm hover:bg-accent transition-colors"
+                      className="p-3 border border-white/30 rounded-sm hover:bg-white/10 transition-colors"
                       aria-label="LinkedIn"
                     >
-                      <Linkedin className="size-5" />
+                      <Linkedin className="size-5 text-white" />
                     </a>
                   )}
                   {photographerInfo.socialLinks.github && (
@@ -97,10 +97,10 @@ export default function Contact() {
                       href={photographerInfo.socialLinks.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-3 border border-border rounded-sm hover:bg-accent transition-colors"
+                      className="p-3 border border-white/30 rounded-sm hover:bg-white/10 transition-colors"
                       aria-label="GitHub"
                     >
-                      <Github className="size-5" />
+                      <Github className="size-5 text-white" />
                     </a>
                   )}
                   {photographerInfo.socialLinks.twitter && (
@@ -108,11 +108,11 @@ export default function Contact() {
                       href={photographerInfo.socialLinks.twitter}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-3 border border-border rounded-sm hover:bg-accent transition-colors"
+                      className="p-3 border border-white/30 rounded-sm hover:bg-white/10 transition-colors"
                       aria-label="X/Twitter"
                     >
                       <svg
-                        className="size-5"
+                        className="size-5 text-white"
                         viewBox="0 0 24 24"
                         fill="currentColor"
                       >
