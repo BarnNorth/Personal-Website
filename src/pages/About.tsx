@@ -16,7 +16,7 @@ export default function About() {
       
       <div>
         {/* Portrait and Biography - Split Layout */}
-        <section className="py-16 md:py-24 px-6 lg:px-8">
+        <section className="py-16 px-6 lg:px-8 md:py-[40px]">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
               {/* Portrait Image */}
