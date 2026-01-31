@@ -78,17 +78,7 @@ export default function About() {
                 <Separator />
 
                 {/* Social Links */}
-                <div className="flex items-center gap-4">
-                  {photographerInfo.socialLinks.linkedin && <a href={photographerInfo.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="LinkedIn">
-                      <img src={linkedinLogo} alt="LinkedIn" className="size-6 rounded-sm" />
-                    </a>}
-                  {photographerInfo.socialLinks.twitter && <a href={photographerInfo.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="X/Twitter">
-                      <img src={xLogo} alt="X" className="size-6 rounded-sm" />
-                    </a>}
-                  {photographerInfo.socialLinks.github && <a href={photographerInfo.socialLinks.github} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="GitHub">
-                      <img src={githubLogo} alt="GitHub" className="size-6 rounded-full" />
-                    </a>}
-                </div>
+                
 
                 {/* Biography */}
                 <div className="space-y-4">
