@@ -4,6 +4,7 @@ import linkedinLogo from '@/assets/linkedin-logo.jpeg';
 import xLogo from '@/assets/x-logo.jpeg';
 import instagramLogo from '@/assets/instagram-logo.png';
 import githubLogo from '@/assets/github-logo.jpeg';
+import aboutPhoto from '@/assets/about-photo.jpg';
 
 import { SEOHead } from '@/components/seo/SEOHead';
 
@@ -33,7 +34,7 @@ export default function About() {
               duration: 0.4
             }}>
                 <div className="aspect-[3/4] relative overflow-hidden rounded-sm bg-muted">
-                  <img src={photographerInfo.portraitImage} alt={photographerInfo.name} className="absolute inset-0 w-full h-full object-cover" />
+                  <img src={aboutPhoto} alt={photographerInfo.name} className="absolute inset-0 w-full h-full object-cover" />
                 </div>
                 
                 {/* Social Links */}
