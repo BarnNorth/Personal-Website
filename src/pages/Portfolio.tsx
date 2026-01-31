@@ -13,7 +13,7 @@ export default function Portfolio() {
       
       <div>
         {/* Projects Grid */}
-        <section className="py-16 md:py-24">
+        <section className="py-16 md:py-[40px]">
           <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project, index) => <ScrollReveal key={project.id} delay={index * 0.1}>
               <a href={project.externalLink} target="_blank" rel="noopener noreferrer" className="block h-full">
