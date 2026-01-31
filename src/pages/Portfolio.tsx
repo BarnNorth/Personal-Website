@@ -17,7 +17,7 @@ export default function Portfolio() {
           <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project, index) => <ScrollReveal key={project.id} delay={index * 0.1}>
               <a href={project.externalLink} target="_blank" rel="noopener noreferrer" className="block h-full">
-                <motion.div className="group relative bg-emerald-950/80 backdrop-blur-md border border-emerald-800/50 rounded-lg overflow-hidden hover:border-emerald-600/50 transition-all duration-300 h-full cursor-pointer" whileHover={{
+                <motion.div className="group relative bg-emerald-950/80 backdrop-blur-md border border-emerald-800/50 rounded-lg overflow-hidden hover:border-emerald-600/50 transition-all duration-300 h-full cursor-pointer flex flex-col" whileHover={{
                 y: -4
               }}>
                   {/* Project Image */}
@@ -27,17 +27,19 @@ export default function Portfolio() {
                   </div>
 
                   {/* Project Content */}
-                  <div className="p-6 space-y-4">
-                    <h3 className="text-2xl font-light tracking-wide">
-                      {project.title}
-                    </h3>
-                    
-                    <p className="text-muted-foreground font-light leading-relaxed">
-                      {project.description}
-                    </p>
+                  <div className="p-6 flex flex-col flex-1">
+                    <div className="space-y-4 flex-1">
+                      <h3 className="text-2xl font-light tracking-wide">
+                        {project.title}
+                      </h3>
+                      
+                      <p className="text-muted-foreground font-light leading-relaxed">
+                        {project.description}
+                      </p>
+                    </div>
 
                     {/* Built With Tools */}
-                    {project.builtWith && <div className="flex items-center gap-2 pt-2">
+                    {project.builtWith && <div className="flex items-center gap-2 pt-4 mt-auto">
                         <span className="text-xs text-white/100 uppercase tracking-wider bg-white/0">Built with</span>
                         <div className="flex items-center gap-3">
                           {project.builtWith.map(tool => <a key={tool.name} href={tool.url} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()} className="opacity-90 hover:opacity-100 transition-opacity" title={tool.name}>
