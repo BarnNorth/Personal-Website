@@ -27,6 +27,7 @@ Whether I'm prompting AI models to generate stunning visuals, building web appli
   email: "tmulder3@gmail.com",
   phone: "",
   availability: "Open to collaborations and new projects",
+  careerStartDate: "2017-08-08",
   socialLinks: {
     linkedin: "http://www.linkedin.com/in/tommy-mulder-a800905b",
     twitter: "https://twitter.com/barn_north",

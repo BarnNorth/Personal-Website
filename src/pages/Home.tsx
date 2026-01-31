@@ -4,6 +4,7 @@ import { ScrollIndicator } from '@/components/ui/ScrollIndicator';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { getTimeSince } from '@/utils/dateUtils';
 import heroBackground from '@/assets/hero-background.jpg';
 
 /**
@@ -11,6 +12,11 @@ import heroBackground from '@/assets/hero-background.jpg';
  * Personal website for Tommy Mulder / BarnNorth Studios
  */
 export default function Home() {
+  const techExperience = getTimeSince(photographerInfo.careerStartDate);
+  
+  // Build the hero introduction with dynamic duration
+  const heroText = `I'm Tommy Mulder, an IT professional turned vibecoder. I spent ${techExperience.formatted} building AI systems and automation tools at Pinterest and Snap. Now I build things for myself.`;
+
   return (
     <>
       <SEOHead />
@@ -52,7 +58,7 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.4 }}
               >
-                {photographerInfo.heroIntroduction}
+                {heroText}
               </motion.p>
 
               {/* CTA Buttons */}
