@@ -21,7 +21,7 @@ export default function Contact() {
           <div className="max-w-2xl mx-auto">
             {/* Contact Information */}
             <motion.div
-              className="space-y-8 text-center text-white"
+              className="space-y-8 text-center text-white bg-emerald-950/80 backdrop-blur-sm rounded-sm p-8 md:p-12"
               initial={{ opacity: 0.8, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
