@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
-import { SEOHead } from "@/components/seo/SEOHead";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { photographerInfo } from "@/data/photographer";
-import { getTimeSince } from "@/utils/dateUtils";
+import { motion } from 'framer-motion';
+import { SEOHead } from '@/components/seo/SEOHead';
+import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
+import { photographerInfo } from '@/data/photographer';
+import { getTimeSince } from '@/utils/dateUtils';
 
 /**
  * Home page
@@ -17,15 +17,15 @@ export default function HomeV2() {
 
   return (
     <>
-      <SEOHead
+      <SEOHead 
         title="Home"
         description="Browse my projects built with AI and vibecoding - web apps, mobile apps, and creative experiments."
       />
-
+      
       {/* Hero section - fills remaining viewport height after sticky header */}
       <section className="min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center px-6">
         <motion.div
-          className="text-center space-y-6 max-w-4xl bg-black/1 backdrop-blur-xs rounded-xl p-8 md:p-12"
+          className="text-center space-y-6 max-w-4xl"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
@@ -35,17 +35,17 @@ export default function HomeV2() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            style={{ textShadow: "0 2px 20px rgba(0,0,0,0.6), 0 4px 40px rgba(0,0,0,0.4)" }}
+            style={{ textShadow: '0 2px 20px rgba(0,0,0,0.6), 0 4px 40px rgba(0,0,0,0.4)' }}
           >
             BarnNorth Studios
           </motion.h1>
-
+          
           <motion.p
             className="text-base sm:text-lg md:text-xl lg:text-2xl font-normal leading-relaxed text-white/95 max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            style={{ textShadow: "0 1px 8px rgba(0,0,0,0.7), 0 2px 16px rgba(0,0,0,0.5)" }}
+            style={{ textShadow: '0 1px 8px rgba(0,0,0,0.7), 0 2px 16px rgba(0,0,0,0.5)' }}
           >
             {heroText}
           </motion.p>
@@ -58,18 +58,18 @@ export default function HomeV2() {
             transition={{ duration: 1, delay: 0.6 }}
           >
             <Link to="/portfolio">
-              <Button
-                variant="outline"
-                size="lg"
+              <Button 
+                variant="outline" 
+                size="lg" 
                 className="text-base font-medium tracking-wide px-8 bg-black/30 border-white/50 text-white hover:bg-black/50 hover:border-white backdrop-blur-sm"
               >
                 View Portfolio
               </Button>
             </Link>
             <Link to="/about">
-              <Button
-                variant="outline"
-                size="lg"
+              <Button 
+                variant="outline" 
+                size="lg" 
                 className="text-base font-medium tracking-wide px-8 bg-black/30 border-white/50 text-white hover:bg-black/50 hover:border-white backdrop-blur-sm"
               >
                 About Me
