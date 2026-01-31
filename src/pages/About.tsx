@@ -57,7 +57,7 @@ export default function About() {
                   <h2 className="text-4xl md:text-5xl font-light tracking-wide">
                     {photographerInfo.name}
                   </h2>
-                  <p className="text-xl text-muted-foreground font-light tracking-wide">
+                  <p className="text-muted-foreground font-light tracking-wide text-sm">
                     {photographerInfo.tagline}
                   </p>
                 </div>
@@ -66,39 +66,15 @@ export default function About() {
 
                 {/* Social Links */}
                 <div className="flex items-center gap-4">
-                  {photographerInfo.socialLinks.linkedin && (
-                    <a
-                      href={photographerInfo.socialLinks.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:scale-110 transition-transform"
-                      aria-label="LinkedIn"
-                    >
+                  {photographerInfo.socialLinks.linkedin && <a href={photographerInfo.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="LinkedIn">
                       <img src={linkedinLogo} alt="LinkedIn" className="size-6 rounded-sm" />
-                    </a>
-                  )}
-                  {photographerInfo.socialLinks.twitter && (
-                    <a
-                      href={photographerInfo.socialLinks.twitter}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:scale-110 transition-transform"
-                      aria-label="X/Twitter"
-                    >
+                    </a>}
+                  {photographerInfo.socialLinks.twitter && <a href={photographerInfo.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="X/Twitter">
                       <img src={xLogo} alt="X" className="size-6 rounded-sm" />
-                    </a>
-                  )}
-                  {photographerInfo.socialLinks.github && (
-                    <a
-                      href={photographerInfo.socialLinks.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:scale-110 transition-transform"
-                      aria-label="GitHub"
-                    >
+                    </a>}
+                  {photographerInfo.socialLinks.github && <a href={photographerInfo.socialLinks.github} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="GitHub">
                       <img src={githubLogo} alt="GitHub" className="size-6 rounded-full" />
-                    </a>
-                  )}
+                    </a>}
                 </div>
 
                 {/* Biography */}
