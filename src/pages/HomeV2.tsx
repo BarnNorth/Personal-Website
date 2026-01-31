@@ -17,7 +17,7 @@ export default function HomeV2() {
       
       <div>
         {/* Hero Content */}
-        <section className="relative h-[calc(100dvh-100px)] w-full flex flex-col items-center justify-center px-6 overflow-hidden">
+        <section className="relative h-[calc(100vh-100px)] w-full flex flex-col items-center justify-center px-6">
           <motion.div
             className="text-center space-y-6 max-w-4xl"
             initial={{ opacity: 0, y: 30 }}

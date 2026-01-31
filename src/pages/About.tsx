@@ -12,11 +12,11 @@ export default function About() {
   return <>
       <SEOHead title="About" description={`Learn about ${photographerInfo.name}, ${photographerInfo.tagline}. ${photographerInfo.biography.split('\n\n')[0]}`} image={photographerInfo.portraitImage} />
       
-      <div className="min-h-[calc(100dvh-100px)] overflow-y-auto">
+      <div>
         {/* Portrait and Biography - Split Layout */}
-        <section className="py-8 md:py-12 px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto w-full">
-            <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
+        <section className="py-16 md:py-24 px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
               {/* Portrait Image */}
               <motion.div className="space-y-6" initial={{
               opacity: 0.8,

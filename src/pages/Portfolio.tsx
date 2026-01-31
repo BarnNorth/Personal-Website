@@ -17,10 +17,10 @@ export default function Portfolio() {
         description="Browse my projects built with AI and vibecoding - web apps, mobile apps, and creative experiments."
       />
       
-      <div className="h-[calc(100dvh-100px)] overflow-hidden">
+      <div>
         {/* Projects Grid */}
-        <section className="h-full py-6 md:py-8 flex items-center">
-          <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full">
+        <section className="py-16 md:py-24">
+          <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <ScrollReveal key={project.id} delay={index * 0.1}>
                 <motion.div
@@ -28,7 +28,7 @@ export default function Portfolio() {
                   whileHover={{ y: -4 }}
                 >
                   {/* Project Image */}
-                  <div className="aspect-video max-h-[15vh] md:max-h-[20vh] relative overflow-hidden">
+                  <div className="aspect-video relative overflow-hidden">
                     <img
                       src={project.coverImage}
                       alt={project.title}
@@ -38,14 +38,35 @@ export default function Portfolio() {
                   </div>
 
                   {/* Project Content */}
-                  <div className="p-4 space-y-2">
-                    <h3 className="text-lg md:text-xl font-light tracking-wide">
+                  <div className="p-6 space-y-4">
+                    <h3 className="text-2xl font-light tracking-wide">
                       {project.title}
                     </h3>
                     
-                    <p className="text-sm text-muted-foreground font-light leading-relaxed line-clamp-2">
+                    <p className="text-muted-foreground font-light leading-relaxed">
                       {project.description}
                     </p>
+
+                    {/* Features */}
+                    {project.features && (
+                      <p className="text-sm text-primary font-light">
+                        {project.features}
+                      </p>
+                    )}
+
+                    {/* Tags */}
+                    {project.tags && (
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="px-3 py-1 text-xs font-light tracking-wide bg-accent text-accent-foreground rounded-full"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
 
                     {/* CTA Button */}
                     {project.externalLink && (
@@ -53,11 +74,11 @@ export default function Portfolio() {
                         href={project.externalLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2"
+                        className="inline-flex items-center gap-2 mt-4"
                       >
-                        <Button size="sm" className="font-light tracking-wide">
+                        <Button className="font-light tracking-wide">
                           {project.id === '1' ? 'Try Health Freak' : 'Check Your Commute'}
-                          <ExternalLink className="size-3 ml-1" />
+                          <ExternalLink className="size-4 ml-2" />
                         </Button>
                       </a>
                     )}
