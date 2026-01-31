@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { Layout } from "@/components/layout/Layout";
 import { SkipToContent } from "@/components/ui/SkipToContent";
@@ -13,7 +13,6 @@ import { AnimatePresence } from "framer-motion";
 import { lazy, Suspense } from "react";
 
 // Code-split route components for better performance
-const Index = lazy(() => import("./pages/Index"));
 const Portfolio = lazy(() => import("./pages/Portfolio"));
 const ProjectDetail = lazy(() => import("./pages/ProjectDetail"));
 const About = lazy(() => import("./pages/About"));
@@ -33,7 +32,7 @@ function AnimatedRoutes() {
           path="/"
           element={
             <PageTransition>
-              <Index />
+              <HomeV2 />
             </PageTransition>
           }
         />
@@ -71,11 +70,7 @@ function AnimatedRoutes() {
         />
         <Route
           path="/home-v2"
-          element={
-            <PageTransition>
-              <HomeV2 />
-            </PageTransition>
-          }
+          element={<Navigate to="/" replace />}
         />
         <Route
           path="*"

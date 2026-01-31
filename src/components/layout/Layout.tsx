@@ -11,32 +11,27 @@ interface LayoutProps {
 /**
  * Main layout wrapper component
  * Provides consistent header and footer across all pages
- * Homepage removes top padding to allow header overlay on hero
  */
 export function Layout({ children }: LayoutProps) {
   const location = useLocation();
   const isHomepage = location.pathname === '/';
-  const isHomeV2 = location.pathname === '/home-v2';
 
   return (
     <div className="min-h-screen flex flex-col relative">
-      {/* Background image for non-homepage routes */}
-      {!isHomepage && (
-        <div className="fixed inset-0 -z-10">
-          <img
-            src={heroBackground}
-            alt=""
-            className={`w-full h-full object-cover ${isHomeV2 ? '' : 'blur-sm'}`}
-            aria-hidden="true"
-          />
-          
-        </div>
-      )}
+      {/* Background image for all routes */}
+      <div className="fixed inset-0 -z-10">
+        <img
+          src={heroBackground}
+          alt=""
+          className={`w-full h-full object-cover ${isHomepage ? '' : 'blur-sm'}`}
+          aria-hidden="true"
+        />
+      </div>
       
       <Header />
       <main 
         id="main-content" 
-        className={`flex-1 ${isHomepage ? '' : 'pt-16'}`}
+        className="flex-1 pt-16"
         tabIndex={-1}
       >
         {children}
