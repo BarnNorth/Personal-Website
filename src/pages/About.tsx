@@ -82,18 +82,7 @@ export default function About() {
                 </div>
 
                 {/* Contact Info */}
-                <div className="pt-4 space-y-2">
-                  <div className="text-sm font-light tracking-wide">
-                    <span className="text-muted-foreground">Email: </span>
-                    <a href={`mailto:${photographerInfo.email}`} className="text-foreground hover:text-muted-foreground transition-colors">
-                      {photographerInfo.email}
-                    </a>
-                  </div>
-                  <div className="text-sm font-light tracking-wide">
-                    <span className="text-muted-foreground">Location: </span>
-                    <span className="text-foreground">{photographerInfo.location}</span>
-                  </div>
-                </div>
+                
               </motion.div>
             </div>
           </div>
