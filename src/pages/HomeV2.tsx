@@ -25,7 +25,7 @@ export default function HomeV2() {
       {/* Hero section - fills remaining viewport height after sticky header */}
       <section className="min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center px-6">
         <motion.div
-          className="text-center space-y-6 max-w-4xl bg-black/1 backdrop-blur-sm rounded-xl p-8 md:p-12"
+          className="text-center space-y-6 max-w-4xl bg-black/1 backdrop-blur-xs rounded-xl p-8 md:p-12"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
