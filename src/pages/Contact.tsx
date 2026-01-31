@@ -4,6 +4,7 @@ import { photographerInfo } from '@/data/photographer';
 
 import linkedinLogo from '@/assets/linkedin-logo.jpeg';
 import xLogo from '@/assets/x-logo.jpeg';
+import instagramLogo from '@/assets/instagram-logo.png';
 import githubLogo from '@/assets/github-logo.jpeg';
 import { SEOHead } from '@/components/seo/SEOHead';
 
@@ -84,6 +85,9 @@ export default function Contact() {
                     </a>}
                   {photographerInfo.socialLinks.twitter && <a href={photographerInfo.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="X/Twitter">
                       <img src={xLogo} alt="X" className="size-8 rounded-sm" />
+                    </a>}
+                  {photographerInfo.socialLinks.instagram && <a href={photographerInfo.socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="Instagram">
+                      <img src={instagramLogo} alt="Instagram" className="size-8 rounded-sm" />
                     </a>}
                   {photographerInfo.socialLinks.github && <a href={photographerInfo.socialLinks.github} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="GitHub">
                       <img src={githubLogo} alt="GitHub" className="size-8 rounded-full" />
