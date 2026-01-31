@@ -20,12 +20,15 @@ export function LiveTracker({ children, className = '' }: LiveTrackerProps) {
     >
       {/* Animated clock icon */}
       <span className="relative inline-flex items-center justify-center">
-        {/* Pulse glow ring */}
+        {/* Pulse glow ring - more visible */}
         <motion.span
-          className="absolute inset-0 rounded-full bg-white/30"
+          className="absolute inset-[-4px] rounded-full"
+          style={{
+            boxShadow: '0 0 12px 4px rgba(255,255,255,0.7), 0 0 20px 8px rgba(255,255,255,0.4)',
+          }}
           animate={{
-            scale: [1, 1.5, 1],
-            opacity: [0.5, 0, 0.5],
+            opacity: [0.8, 0.2, 0.8],
+            scale: [1, 1.3, 1],
           }}
           transition={{
             duration: 2,
@@ -33,10 +36,10 @@ export function LiveTracker({ children, className = '' }: LiveTrackerProps) {
             ease: "easeInOut",
           }}
         />
-        {/* Clock icon with spinning second hand effect */}
+        {/* Clock icon with glow */}
         <Clock 
           size={18} 
-          className="relative z-10 drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]"
+          className="relative z-10 drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]"
         />
       </span>
       
