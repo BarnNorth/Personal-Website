@@ -29,7 +29,7 @@ export function Layout({ children }: LayoutProps) {
             className={`w-full h-full object-cover ${isHomeV2 ? '' : 'blur-sm'}`}
             aria-hidden="true"
           />
-          {!isHomeV2 && <div className="absolute inset-0 bg-background/85 backdrop-blur-sm" />}
+          
         </div>
       )}
       
