@@ -71,7 +71,7 @@ export default function About() {
                       href={photographerInfo.socialLinks.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="opacity-70 hover:opacity-100 transition-opacity"
+                      className="hover:scale-110 transition-transform"
                       aria-label="LinkedIn"
                     >
                       <img src={linkedinLogo} alt="LinkedIn" className="size-6 rounded-sm" />
@@ -82,7 +82,7 @@ export default function About() {
                       href={photographerInfo.socialLinks.twitter}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="opacity-70 hover:opacity-100 transition-opacity"
+                      className="hover:scale-110 transition-transform"
                       aria-label="X/Twitter"
                     >
                       <img src={xLogo} alt="X" className="size-6 rounded-sm" />
@@ -93,7 +93,7 @@ export default function About() {
                       href={photographerInfo.socialLinks.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="opacity-70 hover:opacity-100 transition-opacity"
+                      className="hover:scale-110 transition-transform"
                       aria-label="GitHub"
                     >
                       <img src={githubLogo} alt="GitHub" className="size-6 rounded-full" />
