@@ -28,7 +28,7 @@ export default function Portfolio() {
                   whileHover={{ y: -4 }}
                 >
                   {/* Project Image */}
-                  <div className="aspect-video relative overflow-hidden bg-black/20">
+                  <div className="aspect-video relative overflow-hidden bg-black">
                     <img
                       src={project.coverImage}
                       alt={project.title}
