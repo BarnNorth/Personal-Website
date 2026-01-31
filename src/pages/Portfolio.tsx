@@ -29,7 +29,7 @@ export default function Portfolio() {
                   {/* Project Content */}
                   <div className="p-6 flex flex-col flex-1">
                     <div className="space-y-4 flex-1">
-                      <h3 className="text-2xl font-light tracking-wide">
+                      <h3 className="text-2xl font-light tracking-wide text-white">
                         {project.title}
                       </h3>
                       
