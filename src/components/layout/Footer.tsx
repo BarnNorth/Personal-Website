@@ -1,4 +1,4 @@
-import { photographerInfo } from '@/data/photographer';
+import { profile } from '@/data/profile';
 import linkedinLogo from '@/assets/linkedin-logo.jpeg';
 import xLogo from '@/assets/x-logo.jpeg';
 import instagramLogo from '@/assets/instagram-logo.png';
@@ -16,14 +16,14 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Copyright */}
           <p className="text-sm text-white/70 font-light tracking-wide">
-            © {currentYear} {photographerInfo.name}. All rights reserved.
+            © {currentYear} {profile.name}. All rights reserved.
           </p>
 
           {/* Social Links */}
           <div className="flex items-center gap-6">
-            {photographerInfo.socialLinks.linkedin && (
+            {profile.socialLinks.linkedin && (
               <a
-                href={photographerInfo.socialLinks.linkedin}
+                href={profile.socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors"
@@ -32,9 +32,9 @@ export function Footer() {
                 <img src={linkedinLogo} alt="LinkedIn" className="size-5 rounded-sm" />
               </a>
             )}
-            {photographerInfo.socialLinks.twitter && (
+            {profile.socialLinks.twitter && (
               <a
-                href={photographerInfo.socialLinks.twitter}
+                href={profile.socialLinks.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors"
@@ -43,9 +43,9 @@ export function Footer() {
                 <img src={xLogo} alt="X" className="size-5 rounded-sm" />
               </a>
             )}
-            {photographerInfo.socialLinks.instagram && (
+            {profile.socialLinks.instagram && (
               <a
-                href={photographerInfo.socialLinks.instagram}
+                href={profile.socialLinks.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors"
@@ -54,9 +54,9 @@ export function Footer() {
                 <img src={instagramLogo} alt="Instagram" className="size-5 rounded-sm" />
               </a>
             )}
-            {photographerInfo.socialLinks.github && (
+            {profile.socialLinks.github && (
               <a
-                href={photographerInfo.socialLinks.github}
+                href={profile.socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors"

@@ -1,7 +1,7 @@
-import type { PhotographerInfo } from "@/types";
+import type { Profile } from "@/types";
 import portraitImage from "@/assets/tommy-portrait.jpg";
 
-export const photographerInfo: PhotographerInfo = {
+export const profile: Profile = {
   name: "BarnNorth Studios",
   tagline: "A personal project by Tommy Mulder",
   heroIntroduction:

@@ -2,10 +2,9 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu } from 'lucide-react';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { useScrollPosition } from '@/hooks/useScrollPosition';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { photographerInfo } from '@/data/photographer';
+import { profile } from '@/data/profile';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -15,17 +14,11 @@ const navLinks = [
 ];
 
 /**
- * Main header component with scroll-aware styling
- * Transparent on hero section, solid when scrolled
- * Mobile responsive with hamburger menu
+ * Main header component with sticky nav and mobile hamburger menu
  */
 export function Header() {
   const location = useLocation();
-  const { isScrolled } = useScrollPosition();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
-  // Always use dark transparent style since all pages have the background image
-  const _isTransparent = true;
 
   return (
     <motion.header
@@ -46,7 +39,7 @@ export function Header() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              {photographerInfo.name.toUpperCase()}
+              {profile.name.toUpperCase()}
             </motion.span>
           </Link>
 

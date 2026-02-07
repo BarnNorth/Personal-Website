@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Mail, MapPin } from 'lucide-react';
-import { photographerInfo } from '@/data/photographer';
+import { profile } from '@/data/profile';
 
 import linkedinLogo from '@/assets/linkedin-logo.jpeg';
 import xLogo from '@/assets/x-logo.jpeg';
@@ -13,7 +13,7 @@ import { SEOHead } from '@/components/seo/SEOHead';
  */
 export default function Contact() {
   return <>
-      <SEOHead title="Contact" description={`Get in touch with ${photographerInfo.name} for collaborations, projects, and inquiries. ${photographerInfo.availability}`} />
+      <SEOHead title="Contact" description={`Get in touch with ${profile.name} for collaborations, projects, and inquiries. ${profile.availability}`} />
       
       <div>
         {/* Main Content */}
@@ -50,8 +50,8 @@ export default function Contact() {
                     <p className="text-sm font-light tracking-wide text-white/70">
                       Email
                     </p>
-                    <a href={`mailto:${photographerInfo.email}`} className="text-base md:text-lg font-light text-white hover:text-white/80 transition-colors">
-                      {photographerInfo.email}
+                    <a href={`mailto:${profile.email}`} className="text-base md:text-lg font-light text-white hover:text-white/80 transition-colors">
+                      {profile.email}
                     </a>
                   </div>
                 </div>
@@ -66,7 +66,7 @@ export default function Contact() {
                       Location
                     </p>
                     <p className="text-base md:text-lg font-light text-white">
-                      {photographerInfo.location}
+                      {profile.location}
                     </p>
                   </div>
                 </div>
@@ -80,16 +80,16 @@ export default function Contact() {
                   Connect with me
                 </p>
                 <div className="flex items-center justify-center gap-6">
-                  {photographerInfo.socialLinks.linkedin && <a href={photographerInfo.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="LinkedIn">
+                  {profile.socialLinks.linkedin && <a href={profile.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="LinkedIn">
                       <img src={linkedinLogo} alt="LinkedIn" className="size-8 rounded-sm" />
                     </a>}
-                  {photographerInfo.socialLinks.twitter && <a href={photographerInfo.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="X/Twitter">
+                  {profile.socialLinks.twitter && <a href={profile.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="X/Twitter">
                       <img src={xLogo} alt="X" className="size-8 rounded-sm" />
                     </a>}
-                  {photographerInfo.socialLinks.instagram && <a href={photographerInfo.socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="Instagram">
+                  {profile.socialLinks.instagram && <a href={profile.socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="Instagram">
                       <img src={instagramLogo} alt="Instagram" className="size-8 rounded-sm" />
                     </a>}
-                  {photographerInfo.socialLinks.github && <a href={photographerInfo.socialLinks.github} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="GitHub">
+                  {profile.socialLinks.github && <a href={profile.socialLinks.github} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="GitHub">
                       <img src={githubLogo} alt="GitHub" className="size-8 rounded-full" />
                     </a>}
                 </div>

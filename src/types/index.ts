@@ -40,7 +40,7 @@ export interface Project {
   builtWith?: BuiltWithTool[];
 }
 
-export interface PhotographerInfo {
+export interface Profile {
   name: string;
   tagline: string;
   heroIntroduction: string;
@@ -62,12 +62,4 @@ export interface PhotographerInfo {
     github?: string;
   };
   portraitImage: string;
-}
-
-export interface ContactSubmission {
-  name: string;
-  email: string;
-  projectType: 'collaboration' | 'commission' | 'inquiry';
-  message: string;
-  timestamp: Date;
 }

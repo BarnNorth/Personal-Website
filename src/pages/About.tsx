@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { photographerInfo } from '@/data/photographer';
+import { profile } from '@/data/profile';
 import linkedinLogo from '@/assets/linkedin-logo.jpeg';
 import xLogo from '@/assets/x-logo.jpeg';
 import instagramLogo from '@/assets/instagram-logo.png';
@@ -14,7 +14,7 @@ import { SEOHead } from '@/components/seo/SEOHead';
  */
 export default function About() {
   return <>
-      <SEOHead title="About" description={`Learn about ${photographerInfo.name}, ${photographerInfo.tagline}. ${photographerInfo.biography.split('\n\n')[0]}`} image={photographerInfo.portraitImage} />
+      <SEOHead title="About" description={`Learn about ${profile.name}, ${profile.tagline}. ${profile.biography.split('\n\n')[0]}`} image={profile.portraitImage} />
       
       <div>
         {/* Portrait and Biography - Split Layout */}
@@ -34,7 +34,7 @@ export default function About() {
               duration: 0.4
             }}>
                 <div className="aspect-[3/4] relative overflow-hidden rounded-sm bg-muted">
-                  <img src={aboutPhoto} alt={photographerInfo.name} className="absolute inset-0 w-full h-full object-cover" />
+                  <img src={aboutPhoto} alt={profile.name} className="absolute inset-0 w-full h-full object-cover" />
                 </div>
                 
                 {/* Social Links */}
@@ -57,23 +57,23 @@ export default function About() {
                 {/* Name and Tagline */}
                 <div className="space-y-3">
                   <h2 className="text-4xl md:text-5xl font-light tracking-wide">
-                    {photographerInfo.name}
+                    {profile.name}
                   </h2>
                   <div className="flex items-center justify-between gap-4">
                     <p className="text-white font-light tracking-wide text-sm">
-                      {photographerInfo.tagline}
+                      {profile.tagline}
                     </p>
                     <div className="flex items-center gap-3">
-                      {photographerInfo.socialLinks.linkedin && <a href={photographerInfo.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="LinkedIn">
+                      {profile.socialLinks.linkedin && <a href={profile.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="LinkedIn">
                           <img src={linkedinLogo} alt="LinkedIn" className="size-5 rounded-sm" />
                         </a>}
-                      {photographerInfo.socialLinks.twitter && <a href={photographerInfo.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="X/Twitter">
+                      {profile.socialLinks.twitter && <a href={profile.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="X/Twitter">
                           <img src={xLogo} alt="X" className="size-5 rounded-sm" />
                         </a>}
-                      {photographerInfo.socialLinks.instagram && <a href={photographerInfo.socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="Instagram">
+                      {profile.socialLinks.instagram && <a href={profile.socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="Instagram">
                           <img src={instagramLogo} alt="Instagram" className="size-5 rounded-sm" />
                         </a>}
-                      {photographerInfo.socialLinks.github && <a href={photographerInfo.socialLinks.github} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="GitHub">
+                      {profile.socialLinks.github && <a href={profile.socialLinks.github} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="GitHub">
                           <img src={githubLogo} alt="GitHub" className="size-5 rounded-full" />
                         </a>}
                     </div>
@@ -87,7 +87,7 @@ export default function About() {
 
                 {/* Biography */}
                 <div className="space-y-2">
-                  {photographerInfo.biography.split('\n\n').map((paragraph, index) => <p key={index} className="text-base md:text-lg font-light leading-relaxed text-white/90">
+                  {profile.biography.split('\n\n').map((paragraph, index) => <p key={index} className="text-base md:text-lg font-light leading-relaxed text-white/90">
                       {paragraph}
                     </p>)}
                 </div>

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { photographerInfo } from '@/data/photographer';
+import { profile } from '@/data/profile';
 import { getTimeSince } from '@/utils/dateUtils';
 
 /**
@@ -11,7 +11,7 @@ import { getTimeSince } from '@/utils/dateUtils';
  * Footer appears below the fold on scroll
  */
 export default function HomeV2() {
-  const techExperience = getTimeSince(photographerInfo.careerStartDate);
+  const techExperience = getTimeSince(profile.careerStartDate);
   const heroText = `I'm Tommy Mulder, an IT professional turned vibecoder. I've spent ${techExperience.formatted} in big tech working on many things including Eng, Ops, and People projects. In my free time I build things.`;
   return <>
       <SEOHead title="Home" description="Browse my projects built with AI and vibecoding - web apps, mobile apps, and creative experiments." />

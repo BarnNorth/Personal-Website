@@ -20,7 +20,7 @@ export default function ProjectDetail() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // 404 if project not found
+  // Redirect to /404 so users and bookmarks get a stable "not found" URL; the catch-all route in App.tsx renders NotFound for any unmatched path including /404.
   if (!project) {
     return <Navigate to="/404" replace />;
   }
