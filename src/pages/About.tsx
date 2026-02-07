@@ -45,7 +45,7 @@ export default function About() {
               </motion.div>
 
               {/* Biography and Info */}
-              <motion.div className="space-y-8 bg-emerald-950/80 backdrop-blur-md border border-emerald-800/50 rounded-lg p-8 text-white" initial={{
+              <motion.div className="space-y-8 bg-surface-elevated backdrop-blur-md rounded-lg p-8 text-white shadow-elevated relative overflow-hidden" style={{ boxShadow: 'var(--shadow-elevated), 0 0 0 1px rgba(255,255,255,0.08), 0 0 40px var(--accent-glow)' }} initial={{
               opacity: 0.8,
               x: 10
             }} whileInView={{
@@ -59,7 +59,7 @@ export default function About() {
             }}>
                 {/* Name and Tagline */}
                 <div className="space-y-3">
-                  <h2 className="text-4xl md:text-5xl font-light tracking-wide">
+                  <h2 className="font-display text-4xl md:text-5xl font-light tracking-wide">
                     {profile.name}
                   </h2>
                   <div className="flex items-center justify-between gap-4">

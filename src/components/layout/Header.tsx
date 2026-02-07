@@ -32,14 +32,14 @@ export function Header() {
           {/* Logo */}
           <Link
             to="/"
-            className="text-lg font-light tracking-widest transition-all duration-300 text-white hover:text-white/80"
+            className="font-display text-lg font-light tracking-wide transition-all duration-300 text-white hover:text-white/80"
           >
             <motion.span
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              {profile.name.toUpperCase()}
+              {profile.name}
             </motion.span>
           </Link>
 
@@ -54,9 +54,11 @@ export function Header() {
                 >
                   <Link
                     to={link.path}
-                    className="relative text-lg leading-7 font-light tracking-wide text-white transition-colors duration-300 hover:text-white/80"
+                    className="group/link relative text-lg leading-7 font-light tracking-wide text-white transition-colors duration-300 hover:text-white/80"
                   >
                     {link.name}
+                    {/* Hover underline */}
+                    <span className="absolute -bottom-1 left-0 h-px bg-white/70 origin-left scale-x-0 transition-transform duration-300 group-hover/link:scale-x-100" />
                     {/* Active underline */}
                     {location.pathname === link.path && (
                       <motion.div

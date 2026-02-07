@@ -17,7 +17,7 @@ export default function Portfolio() {
           <div className="max-w-6xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project, index) => <ScrollReveal key={project.id} delay={index * 0.1}>
               <a href={project.externalLink} target="_blank" rel="noopener noreferrer" className="block h-full">
-                <motion.div className="group relative bg-emerald-950/80 backdrop-blur-md border border-emerald-800/50 rounded-lg overflow-hidden hover:border-emerald-600/50 transition-all duration-300 h-full cursor-pointer flex flex-col" whileHover={{
+                <motion.div className="group relative bg-surface-portfolio backdrop-blur-md border border-accent-border rounded-lg overflow-hidden hover:border-emerald-500/50 hover:shadow-[0_0_0_1px_rgba(52,211,153,0.2),0_8px_32px_rgba(0,0,0,0.28)] transition-all duration-300 h-full cursor-pointer flex flex-col shadow-elevated" whileHover={{
                 y: -4
               }}>
                   {/* Project Image */}
