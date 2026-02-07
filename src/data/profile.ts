@@ -5,14 +5,16 @@ export const profile: Profile = {
   name: "BarnNorth Studios",
   tagline: "A personal project by Tommy Mulder",
   heroIntroduction:
-    "I'm Tommy Mulder, an IT professional turned vibecoder. I spent 8 years building AI systems and automation tools at Pinterest and Snap. Now I build things for myself.",
-  biography: `I spent 8 years in tech operations at Pinterest and Snap Inc., where I led AI implementations and automation projects. At Pinterest, I built Beacon—an AI-powered Slack support bot that achieved a 68% inquiry deflection rate. At Snap, I scaled Troopr (a Slack-Jira automation tool) to 1,500+ users in 30 days and owned the Voice of Tech survey that translated employee feedback into product roadmaps.
+    "I'm Tommy Mulder, an IT professional, real estate investor, and aspiring builder. I've spent {{techExperience}} in big tech working on many things including IT Ops, Eng, and People Tech projects. In my free time I build things.",
+  biography: `I've spent {{techExperience}} in big tech at Snapchat and Pinterest, where I rose through the ranks of IT. I started as a contract worker procurement specialist writing POs all day. Then I moved to IT Asset Management managing a device library. Eventually I became an IT Project & Program Manager helping engineering teams be more productive and driving IT's most high impact projects.
 
-But I got tired of just managing projects. I wanted to build the thing, not just coordinate the people building the thing.
+That brings me to my most recent role where I returned to Snap after 2 years for Season 2 to help lead the next wave of enterprise AI transformation across the company. I'm embedded within the IT Engineering and SaaS Admin teams, driving programs that scale and operationalize next-gen AI and agentic tools across Snap.
 
-So I started vibecoding—using AI tools like Cursor and Claude to build my own projects. I'm not a software engineer, but I've learned to leverage AI to turn ideas into real products. Health Freak started as a weekend experiment and became a full iOS app. CommutesDontSuck was born from my frustration with San Diego's transit system.
+During this time I learned the thing I truly love doing is building "the thing". It can take many forms: processes, automations, tools, dashboards, or even people. This may be ignorant of me to say, but I felt I could have been a decent software engineer. I just wasn't self aware enough back then to go down that education path. Thankfully a crazy new technology would come out years later that could help me scratch the builder itch I had.
 
-I love the problem-solving aspect of building—figuring out architecture, debugging issues, and seeing something work that didn't exist before. BarnNorth Studios is where I explore what's possible when you combine domain knowledge with AI-powered development tools.`,
+So I started vibecoding. I use AI tools like Cursor and Claude to build my own projects. Like I said, I'm not a software engineer, but I've learned to leverage AI to turn ideas into real products. Health Freak started as an experiment for my wife and me to find healthy food. It became a full iOS app. CommutesDontSuck was born from my frustration with trying to find an ideal place to live without being stuck in hours of traffic.
+
+I love the problem-solving aspect of building. I can sit there for hours working on a specific issue or idea where I feel most other people would get over it and move on. Is that a strength or weakness? Not sure, but it's what I have and I enjoy it. BarnNorth Studios is where I explore what's possible when you just want to build stuff yourself.`,
   approach: `My creative process is guided by curiosity, iteration, and a belief that the best results come from the collaboration between human intuition and AI capabilities.
 
 Whether I'm prompting AI models to generate stunning visuals, building web applications with modern frameworks, or experimenting with new technologies, I strive to push boundaries and create work that inspires others to explore what's possible.`,

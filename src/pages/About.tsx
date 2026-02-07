@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { profile } from '@/data/profile';
+import { getTimeSince } from '@/utils/dateUtils';
 import linkedinLogo from '@/assets/linkedin-logo.jpeg';
 import xLogo from '@/assets/x-logo.jpeg';
 import instagramLogo from '@/assets/instagram-logo.png';
@@ -13,12 +14,14 @@ import { SEOHead } from '@/components/seo/SEOHead';
  * Features split layout with portrait and comprehensive biography
  */
 export default function About() {
+  const techExperience = getTimeSince(profile.careerStartDate);
+  const biography = profile.biography.replace('{{techExperience}}', techExperience.formatted);
   return <>
-      <SEOHead title="About" description={`Learn about ${profile.name}, ${profile.tagline}. ${profile.biography.split('\n\n')[0]}`} image={profile.portraitImage} />
+      <SEOHead title="About" description={`Learn about ${profile.name}, ${profile.tagline}. ${biography.split('\n\n')[0]}`} image={profile.portraitImage} />
       
       <div>
         {/* Portrait and Biography - Split Layout */}
-        <section className="py-16 px-6 lg:px-8 md:py-[40px]">
+        <section className="py-16 md:py-20 px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
               {/* Portrait Image */}
@@ -87,7 +90,7 @@ export default function About() {
 
                 {/* Biography */}
                 <div className="space-y-2">
-                  {profile.biography.split('\n\n').map((paragraph, index) => <p key={index} className="text-base md:text-lg font-light leading-relaxed text-white/90">
+                  {biography.split('\n\n').map((paragraph, index) => <p key={index} className="text-base md:text-lg font-light leading-relaxed text-white/90">
                       {paragraph}
                     </p>)}
                 </div>

@@ -129,9 +129,9 @@ export default function ProjectDetail() {
         </motion.div>
       </section>
 
-        {/* Image Gallery - Edge to edge */}
+        {/* Image Gallery - consistent gutters with rest of page */}
         <section className="py-12 md:py-16">
-          <div className="space-y-8 md:space-y-12">
+          <div className="max-w-6xl mx-auto px-6 lg:px-8 space-y-8 md:space-y-12">
             {project.images.map((image, index) => (
               <ScrollReveal key={image.id} delay={index * 0.1}>
                 <ImageWithLightbox

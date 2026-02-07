@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { profile } from '@/data/profile';
+import { getTimeSince } from '@/utils/dateUtils';
 
 interface SEOHeadProps {
   title?: string;
@@ -26,7 +27,10 @@ export function SEOHead({
     ? `${title} | ${profile.name}` 
     : `${profile.name} - ${profile.tagline}`;
   
-  const defaultDescription = profile.heroIntroduction;
+  const defaultDescription = profile.heroIntroduction.replace(
+    '{{techExperience}}',
+    getTimeSince(profile.careerStartDate).formatted
+  );
   const fullDescription = description || defaultDescription;
   
   const baseUrl = window.location.origin;

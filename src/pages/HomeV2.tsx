@@ -12,12 +12,12 @@ import { getTimeSince } from '@/utils/dateUtils';
  */
 export default function HomeV2() {
   const techExperience = getTimeSince(profile.careerStartDate);
-  const heroText = `I'm Tommy Mulder, an IT professional turned vibecoder. I've spent ${techExperience.formatted} in big tech working on many things including Eng, Ops, and People projects. In my free time I build things.`;
+  const heroText = `I'm Tommy Mulder, an IT professional, real estate investor, and aspiring builder. I've spent ${techExperience.formatted} in big tech working on many things including IT Ops, Eng, and People Tech projects. In my free time I build things.`;
   return <>
-      <SEOHead title="Home" description="Browse my projects built with AI and vibecoding - web apps, mobile apps, and creative experiments." />
+      <SEOHead title="Home" description={heroText} />
       
       {/* Hero section - fills remaining viewport height after sticky header */}
-      <section className="min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center px-6">
+      <section className="min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center px-6 lg:px-8">
         <motion.div className="text-center space-y-6 max-w-4xl" initial={{
         opacity: 0,
         y: 30

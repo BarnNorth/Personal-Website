@@ -77,10 +77,10 @@ export function Header() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="size-9 text-white hover:bg-white/10"
+                  className="min-w-11 min-h-11 size-11 text-white hover:bg-white/10"
                   aria-label="Open menu"
                 >
-                  <Menu className="size-5" />
+                  <Menu className="size-5 shrink-0" />
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-full sm:w-80">

@@ -13,8 +13,8 @@ export default function Portfolio() {
       
       <div>
         {/* Projects Grid */}
-        <section className="py-16 md:py-[40px]">
-          <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section className="py-16 md:py-20">
+          <div className="max-w-6xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project, index) => <ScrollReveal key={project.id} delay={index * 0.1}>
               <a href={project.externalLink} target="_blank" rel="noopener noreferrer" className="block h-full">
                 <motion.div className="group relative bg-emerald-950/80 backdrop-blur-md border border-emerald-800/50 rounded-lg overflow-hidden hover:border-emerald-600/50 transition-all duration-300 h-full cursor-pointer flex flex-col" whileHover={{
