@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
 import { Header } from './Header';
 import { Footer } from './Footer';
-import heroBackground from '@/assets/hero-background.jpg';
+import heroBackground from '@/assets/hero-background-barn-lake.png';
 
 interface LayoutProps {
   children: ReactNode;
@@ -24,12 +24,12 @@ export function Layout({ children }: LayoutProps) {
 
   return (
     <div className="min-h-screen flex flex-col relative noise-overlay">
-      {/* Background image for all routes */}
-      <div className="fixed inset-0 -z-10 overflow-hidden">
+      {/* Background image for all routes - fills viewport, no side bars */}
+      <div className="fixed inset-0 -z-10 overflow-hidden bg-[#0f1729]">
         <motion.img
           src={heroBackground}
           alt=""
-          className={`w-full h-full object-cover transition-[filter] duration-500 ${isHomepage ? '' : 'blur-[6px]'}`}
+          className={`w-full h-full object-cover object-center transition-[filter] duration-500 ${isHomepage ? '' : 'blur-[6px]'}`}
           aria-hidden="true"
           style={{ scale: backgroundScale, opacity: backgroundOpacity }}
         />

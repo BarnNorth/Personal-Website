@@ -4,8 +4,6 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { profile } from '@/data/profile';
-
 const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'Portfolio', path: '/portfolio' },
@@ -28,21 +26,7 @@ export function Header() {
       className="sticky top-0 z-50 transition-all duration-500 bg-black/40 backdrop-blur-md border-b border-white/10"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link
-            to="/"
-            className="font-display text-lg font-light tracking-wide transition-all duration-300 text-white hover:text-white/80"
-          >
-            <motion.span
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              {profile.name}
-            </motion.span>
-          </Link>
-
+        <div className="flex items-center justify-end h-16">
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link, index) => (
