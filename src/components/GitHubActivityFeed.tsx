@@ -114,7 +114,7 @@ export function GitHubActivityFeed({ username: usernameProp }: { username?: stri
 
   if (loading) {
     return (
-      <div className="bg-surface-portfolio backdrop-blur-md border border-accent-border rounded-lg p-6 shadow-elevated max-h-[min(38vh,340px)]">
+      <div className="bg-surface-portfolio backdrop-blur-md border border-accent-border rounded-lg p-6 shadow-elevated h-full min-h-[200px] flex flex-col">
         <h2 className="font-display text-2xl md:text-3xl font-medium tracking-wide text-white mb-2 text-center">
           Check out what I&apos;m up to
         </h2>
@@ -132,7 +132,7 @@ export function GitHubActivityFeed({ username: usernameProp }: { username?: stri
 
   if (error) {
     return (
-      <div className="bg-surface-portfolio backdrop-blur-md border border-accent-border rounded-lg p-6 shadow-elevated max-h-[min(38vh,340px)]">
+      <div className="bg-surface-portfolio backdrop-blur-md border border-accent-border rounded-lg p-6 shadow-elevated h-full min-h-[200px] flex flex-col">
         <h2 className="font-display text-2xl md:text-3xl font-medium tracking-wide text-white mb-2 text-center">
           Check out what I&apos;m up to
         </h2>
@@ -154,7 +154,7 @@ export function GitHubActivityFeed({ username: usernameProp }: { username?: stri
 
   if (!items?.length) {
     return (
-      <div className="bg-surface-portfolio backdrop-blur-md border border-accent-border rounded-lg p-6 shadow-elevated max-h-[min(38vh,340px)]">
+      <div className="bg-surface-portfolio backdrop-blur-md border border-accent-border rounded-lg p-6 shadow-elevated h-full min-h-[200px] flex flex-col">
         <h2 className="font-display text-2xl md:text-3xl font-medium tracking-wide text-white mb-2 text-center">
           Check out what I&apos;m up to
         </h2>
@@ -186,7 +186,7 @@ export function GitHubActivityFeed({ username: usernameProp }: { username?: stri
   }
 
   return (
-    <div className="bg-surface-portfolio backdrop-blur-md border border-accent-border rounded-lg p-6 shadow-elevated max-h-[min(38vh,340px)] flex flex-col">
+    <div className="bg-surface-portfolio backdrop-blur-md border border-accent-border rounded-lg p-6 shadow-elevated h-full min-h-0 flex flex-col">
       <h2 className="font-display text-2xl md:text-3xl font-medium tracking-wide text-white mb-2 shrink-0 text-center">
         Check out what I&apos;m up to
       </h2>
