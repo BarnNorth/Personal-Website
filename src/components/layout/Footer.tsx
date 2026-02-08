@@ -12,12 +12,19 @@ export function Footer() {
 
   return (
     <footer className="border-t border-white/10 bg-black/40 backdrop-blur-md">
+      {/* Motif: thin line above content */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-6">
+        <div className="h-px w-16 bg-gradient-to-r from-white/50 to-transparent" aria-hidden="true" />
+      </div>
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          {/* Copyright */}
-          <p className="text-sm text-white/70 font-light tracking-wide">
-            © {currentYear} {profile.name}. All rights reserved.
-          </p>
+          {/* Wordmark and copyright */}
+          <div className="flex flex-col items-center md:items-start gap-1">
+            <span className="font-display text-sm tracking-wide text-white/90">BarnNorth Studios</span>
+            <p className="text-sm text-white/60 font-light tracking-wide">
+              © {currentYear} Tommy Mulder. All rights reserved.
+            </p>
+          </div>
 
           {/* Social Links */}
           <div className="flex items-center gap-6">

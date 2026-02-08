@@ -20,7 +20,7 @@ export default function Contact() {
         <section className="py-16 md:py-20 px-6 lg:px-8">
           <div className="max-w-2xl mx-auto">
             {/* Contact Information */}
-            <motion.div className="space-y-8 text-center text-white bg-emerald-950/80 backdrop-blur-sm rounded-sm p-8 md:p-12" initial={{
+            <motion.div className="space-y-8 text-center text-white bg-surface-portfolio backdrop-blur-md border border-accent-border rounded-lg p-8 md:p-12 shadow-elevated" initial={{
             opacity: 0.8,
             y: 10
           }} animate={{
@@ -30,7 +30,7 @@ export default function Contact() {
             duration: 0.4
           }}>
               <div className="space-y-3">
-                <h2 className="text-3xl md:text-4xl font-light tracking-wide text-white">
+                <h2 className="font-display text-3xl md:text-4xl font-light tracking-wide text-white">
                   Contact Information
                 </h2>
                 <p className="text-white/100 font-light">
@@ -43,7 +43,7 @@ export default function Contact() {
               <div className="space-y-6 flex flex-col items-start mx-auto w-fit">
                 {/* Email */}
                 <div className="flex items-center gap-4">
-                  <div className="p-3 rounded-sm bg-white/10">
+                  <div className="p-3 rounded-sm border border-white/30 bg-white/5">
                     <Mail className="size-5 text-white" />
                   </div>
                   <div className="space-y-1 text-left">
@@ -58,7 +58,7 @@ export default function Contact() {
 
                 {/* Location */}
                 <div className="flex items-center gap-4">
-                  <div className="p-3 rounded-sm bg-white/10">
+                  <div className="p-3 rounded-sm border border-white/30 bg-white/5">
                     <MapPin className="size-5 text-white" />
                   </div>
                   <div className="space-y-1 text-left">
