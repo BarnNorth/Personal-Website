@@ -38,7 +38,7 @@ export function Layout({ children }: LayoutProps) {
       <Header />
       <main 
         id="main-content" 
-        className="flex-1 flex flex-col"
+        className="flex-1 flex flex-col min-h-[calc(100vh-4rem)]"
         tabIndex={-1}
       >
         {children}
