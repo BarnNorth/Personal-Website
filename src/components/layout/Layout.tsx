@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import { useLocation } from 'react-router-dom';
 import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
+import { useIsMobile } from '@/hooks/useMediaQuery';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import heroBackground from '@/assets/hero-background-barn-lake.png';
@@ -18,6 +19,7 @@ export function Layout({ children }: LayoutProps) {
   const location = useLocation();
   const isHomepage = location.pathname === '/';
   const prefersReducedMotion = useReducedMotion();
+  const isMobile = useIsMobile();
   const { scrollY } = useScroll();
   const backgroundScale = useTransform(scrollY, [0, 400], [1, prefersReducedMotion ? 1 : 1.06]);
   const backgroundOpacity = useTransform(scrollY, [0, 300], [1, prefersReducedMotion ? 1 : 0.92]);
@@ -29,9 +31,9 @@ export function Layout({ children }: LayoutProps) {
         <motion.img
           src={heroBackground}
           alt=""
-          className={`w-full h-full object-cover object-center transition-[filter] duration-500 ${isHomepage ? '' : 'blur-[6px]'}`}
+          className={`w-full h-full object-cover object-center max-[767px]:object-[50%_20%] transition-[filter] duration-500 ${isHomepage ? '' : 'blur-[6px]'}`}
           aria-hidden="true"
-          style={{ scale: backgroundScale, opacity: backgroundOpacity }}
+          style={{ scale: isMobile ? 1 : backgroundScale, opacity: isMobile ? 1 : backgroundOpacity }}
         />
       </div>
       
